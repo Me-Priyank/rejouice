@@ -4,6 +4,11 @@
     /* Add more font formats for broader browser support */
     /* e.g., woff, woff2, etc. */
   }
+
+  @font-face {
+    font-family: rj;
+    src: url(./Rejouice-Headline.ttf) format('truetype');
+  }
 *{
     margin: 0;
     padding: 0;
@@ -22,7 +27,22 @@ html, body {
     background-color: rgb(140, 145, 145);
     position: relative;
 }
+#cursor{
+    height: 7.5vw;
+    width: 7.5vw;
+    background-color: #ff5f38;
+    position: fixed;
+    border-radius: 50%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+#cursor h5 {
+    font-size: 1.2vw;
+    font-weight: 500;
+}
 #page1 video{
     height: 100%;
     width: 100%;
@@ -36,8 +56,14 @@ html, body {
     position: relative;
     z-index: 2;
     color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
+
 nav{
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -52,4 +78,15 @@ nav h3 {
 nav h4 {
     font-size: 1.4vw;
     font-weight: 100;
+}
+
+#page1-content h1{
+    font-family: 'rj';
+    font-size: 27vw;
+    font-weight: 100;
+    line-height: 27vw;
+}
+
+#page1-content h1 span{
+    font-family: 'rj';
 }
