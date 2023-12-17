@@ -28,4 +28,12 @@ html, body {
     width: 100%;
     background-color: black;
     position: relative;
+    z-index: 2;
+    color: white;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: red;
 }
