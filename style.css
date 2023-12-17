@@ -1,13 +1,20 @@
+@font-face {
+    font-family: nb;
+    src: url(./NBInternationalProBoo.ttf) format('truetype');
+    /* Add more font formats for broader browser support */
+    /* e.g., woff, woff2, etc. */
+  }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Gilroy';
+    font-family: 'nb'
 }
 
 html, body {
     height: 100%;
     width: 100%;
+    
 }
 #page1{
     height: 100vh;
@@ -26,7 +33,6 @@ html, body {
 #page1-content{
     height: 100%;
     width: 100%;
-    background-color: black;
     position: relative;
     z-index: 2;
     color: white;
@@ -35,13 +41,15 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: red;
     padding: 3vw 3vw;
 }
 
 nav h3 {
     font-size: 1.4vw;
+    font-weight: 100;
+    
 }
 nav h4 {
-    font-size: 3vw;
+    font-size: 1.4vw;
+    font-weight: 100;
 }
