@@ -71,7 +71,7 @@ gsap.from(".elem span", {
         scroller: "#main",
         start: "top 77%",
         end: "top 76%",
-        markers: true,
+        // markers: true,
         scrub: 2
     }
 });
@@ -85,7 +85,7 @@ gsap.from(".elem p", {
         scroller: "#main",
         start: "top 77%",
         end: "top 76%",
-        markers: true,
+        // markers: true,
         scrub: 2
     }
 });
