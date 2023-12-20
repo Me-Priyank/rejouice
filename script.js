@@ -34,8 +34,9 @@ ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 ScrollTrigger.refresh();
 
 }
-locoScroll()
-;
+locoScroll();
+
+
 function cursorEffect(){
     var page1Content = document.querySelector("#page1-content")
 var cursor = document.querySelector("#cursor")
@@ -60,6 +61,8 @@ page1Content.addEventListener("mouseleave", function(){
 })
 }
 cursorEffect();
+
+
 function page2Animation(){
 
 gsap.from(".elem span", {
@@ -105,8 +108,8 @@ function p4(){
         scroller: "#main",
         start: "top 97%",
         end: "top 76%", // Adjust the end position as needed
-        scrub: true,
-        markers: true // Remove this line in production
+        scrub: 2,
+        // markers: true // Remove this line in production
       }
     });
 
@@ -128,3 +131,17 @@ function p4(){
     });
 }
 p4();
+
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
