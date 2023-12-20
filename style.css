@@ -160,12 +160,13 @@ nav h4 {
     font-weight: 500;
 }
 .page3-elem{
-    height: 100vh;
+    height: 75vh;
     width: 100%;
     background-color: red;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 8vw;
 }
 .page3-elem .box{
     height: 100%;
