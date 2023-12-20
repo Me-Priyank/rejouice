@@ -63,27 +63,27 @@ cursorEffect();
 function page2Animation(){
 
 gsap.from(".elem span", {
-    y: 80,
-    stagger: 0.2,
+    y: 250,
+    stagger: 1.2,
     duration: 0.5,
     scrollTrigger: {
         trigger: "#page2",
         scroller: "#main",
-        start: "top 77%",
+        start: "top 97%",
         end: "top 76%",
         // markers: true,
         scrub: 2
     }
 });
 
-gsap.from(".elem p", {
-    y: 80,
-    stagger: 0.2,
+gsap.from(".page2-content p", {
+    y: 250,
+    stagger: 1.2,
     duration: 1,
     scrollTrigger: {
         trigger: "#page2",
         scroller: "#main",
-        start: "top 77%",
+        start: "top 97%",
         end: "top 76%",
         // markers: true,
         scrub: 2
@@ -93,3 +93,65 @@ gsap.from(".elem p", {
     
 }
 page2Animation();
+
+// function page4Animation() {
+//     gsap.from(".page4-content span", {
+//         y: 500,
+//         stagger: 0.2,
+//         duration: 0.5,
+//         scrollTrigger: {
+//             trigger: "#page4",
+//             scroller: "#main",
+//             start: "top 97%",
+//             end: "top 76%",
+//             // markers: true,
+//             scrub: 2
+//         }
+//     });
+    
+//     gsap.from("#page4 p", {
+//         y: 500,
+//         stagger: 0.2,
+//         duration: 1,
+//         scrollTrigger: {
+//             trigger: "#page4",
+//             scroller: "#main",
+//             start: "top 97%",
+//             end: "top 76%",
+//             // markers: true,
+//             scrub: 2
+//         }
+//     });
+// }
+// page4Animation()
+
+function p4(){
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Animation timeline
+    const timeline = gsap.timeline({
+      scrollTrigger: {
+        trigger: "#page4",
+        start: "top 80%", // Adjust the start position as needed
+        end: "bottom 60%", // Adjust the end position as needed
+        scrub: true,
+        markers: true // Remove this line in production
+      }
+    });
+
+    // Add animation to the timeline
+    timeline.from("#page4 p", {
+      opacity: 0,
+      y: 80
+    });
+
+    // Add class "visible" to the paragraph when the animation completes
+    timeline.to("#page4 p", {
+      opacity: 1,
+      y: 10,
+      onComplete: () => {
+        document.querySelector("#page4 p").classList.add("visible");
+      }
+    });
+}
+p4();
