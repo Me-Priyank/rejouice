@@ -162,7 +162,7 @@ nav h4 {
 .page3-elem{
     height: 75vh;
     width: 100%;
-    background-color: red;
+    /* background-color: red; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -171,5 +171,24 @@ nav h4 {
 .page3-elem .box{
     height: 100%;
     width: 32.6%;
-    background-color: blue;
+    /* background-color: blue; */
+    position: relative;
+}
+.page3-elem .box video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.page3-elem .box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    opacity: 1;
+    object-position: center;
+    transition: all linear 0.5s;
+}
+.page3-elem .box:hover img{
+    opacity: 0;
 }
