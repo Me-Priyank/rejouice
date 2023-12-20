@@ -198,7 +198,7 @@ nav h4 {
     transform: translateY(7vw);
 }
 #page4{
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     position: relative;
     z-index: 2;
@@ -231,5 +231,14 @@ nav h4 {
     margin: 0;
     padding-left: 5vw;
     opacity: 0;
-      transition: opacity 0.5s, transform 0.5s;
+    transition: opacity 0.5s, transform 0.5s;
+}
+#page4 video{
+    padding-top: 1vw;
+    height: 1000px;
+}
+#page4 svg {
+    position: absolute;
+    height: 35%;
+    transform: translateY(650px);
 }

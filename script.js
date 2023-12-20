@@ -94,36 +94,6 @@ gsap.from(".page2-content p", {
 }
 page2Animation();
 
-// function page4Animation() {
-//     gsap.from(".page4-content span", {
-//         y: 500,
-//         stagger: 0.2,
-//         duration: 0.5,
-//         scrollTrigger: {
-//             trigger: "#page4",
-//             scroller: "#main",
-//             start: "top 97%",
-//             end: "top 76%",
-//             // markers: true,
-//             scrub: 2
-//         }
-//     });
-    
-//     gsap.from("#page4 p", {
-//         y: 500,
-//         stagger: 0.2,
-//         duration: 1,
-//         scrollTrigger: {
-//             trigger: "#page4",
-//             scroller: "#main",
-//             start: "top 97%",
-//             end: "top 76%",
-//             // markers: true,
-//             scrub: 2
-//         }
-//     });
-// }
-// page4Animation()
 
 function p4(){
     gsap.registerPlugin(ScrollTrigger);
@@ -132,8 +102,9 @@ function p4(){
     const timeline = gsap.timeline({
       scrollTrigger: {
         trigger: "#page4",
-        start: "top 80%", // Adjust the start position as needed
-        end: "bottom 60%", // Adjust the end position as needed
+        scroller: "#main",
+        start: "top 97%",
+        end: "top 76%", // Adjust the end position as needed
         scrub: true,
         markers: true // Remove this line in production
       }
@@ -142,13 +113,15 @@ function p4(){
     // Add animation to the timeline
     timeline.from("#page4 p", {
       opacity: 0,
-      y: 80
+      y: 220,
+      stagger: 0.2,
+     duration: 2,
     });
 
     // Add class "visible" to the paragraph when the animation completes
     timeline.to("#page4 p", {
       opacity: 1,
-      y: 10,
+      y: 0,
       onComplete: () => {
         document.querySelector("#page4 p").classList.add("visible");
       }
