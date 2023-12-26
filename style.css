@@ -85,7 +85,6 @@ nav h4 {
     font-size: 27vw;
     font-weight: 100;
     line-height: 27vw;
-   
 }
 
 #page1-content h1 span{
@@ -303,4 +302,34 @@ nav h4 {
 #loader h3{
     font-size: 2vw;
     font-weight: 100;
+}
+.black-cursor{
+    color: white;
+    height: 7.5vw;
+    width: 7.5vw;
+    background-color: #000000;
+    position: fixed;
+    border-radius: 50%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#page6{
+    margin-top: 20vw;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+#page6 h1{
+    padding-top: 15vw;
+    font-family: 'rj';
+    font-size: 27vw;
+    font-weight: 100;
+    line-height: 27vw;
+}
+#page6 h1 span{
+    display: inline-block;
+    color: white;
+    font-family: 'rj';
 }
