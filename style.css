@@ -246,7 +246,7 @@ nav h4 {
     transform: translateY(650px);
 }
 #page5{
-    min-height: 100vh;
+    height: 100vh;
     width: 100%;
     position: relative;
     padding: 10vw 0;
@@ -316,13 +316,14 @@ nav h4 {
     justify-content: center;
 }
 #page6{
-    margin-top: 20vw;
+    margin-top: 55vw;
     height: 100vh;
     width: 100%;
     background-color: black;
 }
 #page6 h1{
     padding-top: 15vw;
+    padding-left: 4vw;
     font-family: 'rj';
     font-size: 27vw;
     font-weight: 100;

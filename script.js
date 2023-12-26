@@ -211,5 +211,19 @@ page4Content.addEventListener("mouseleave", function(){
 bcursorEffect();
 
 function page6Animation(){
-  var hh = gasp.timeline()
+  gsap.from(" #page6 h1 span", {
+    y: 350,
+    stagger: 1.9,
+    duration: 7,
+    scrollTrigger: {
+        trigger: "#page6",
+        scroller: "#main",
+        start: "top 97%",
+        end: "top 76%",
+        // markers: true,
+        scrub: 2,
+        delay:40
+    }
+});
 }
+page6Animation();
