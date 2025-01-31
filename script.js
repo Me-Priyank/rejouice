@@ -1,4 +1,5 @@
-
+if(window.innerWidth > 700){
+  
 
 
 if(window.innerWidth > 740){
@@ -505,8 +506,7 @@ gsap.from(".page2-content p", {
 }
 
 if(window.innerWidth > 740){
-  page2Animation();
-
+  page2Animation
 }
 
 function p4(){
@@ -948,3 +948,5 @@ document.addEventListener("DOMContentLoaded", function() {
 window.addEventListener('resize', function() {
   initResponsiveAnimations();
 });
+
+}
