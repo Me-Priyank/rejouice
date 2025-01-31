@@ -1314,9 +1314,12 @@ border-top-right-radius: 10%;
   }
 
   #page4 span p {
+    margin-top: 10%;
     opacity: 10 !important;
   }
-
+  #rough{
+transform: translateY(290%);
+  }
   #bang{
     margin-top: -64%;
     font-size: 10px;
@@ -1335,14 +1338,14 @@ border-top-right-radius: 10%;
   /* Page 5 */
   #page5 {
     z-index: 9999;
-    margin-top: -110%;
+    margin-top: -120%;
     height: auto;
     padding: 50px 0;
   }
 
-  #rough{
+ #rough{
     width: 90px;
-    margin-top: -16%;
+    margin-top: 4%;
   }
 
   #page5 h1 {
@@ -1362,16 +1365,17 @@ border-top-right-radius: 10%;
 
   /* Container 3D */
   #container3D {
+    display: flex;
     border-top-left-radius: 0%;
     border-top-right-radius: 0%;
-    height: 90vh;
+    height: 50vh;
   }
   #fanta {
     width: 40%;
     margin-top: -60%;
   }
   #doitonce, #doitright {
-    font-size: 40px;
+    font-size: 50px;
     
   }
 
@@ -1440,12 +1444,15 @@ border-top-right-radius: 10%;
   }
   
   #doitonce{
-    font-size: 32px;
+    transform: translate(20%,-10%);
+    font-size: 45px;
 
   }
 
   #doitright {
-    font-size: 32px;
+    transform: translate(-20%,0);
+
+    font-size: 45px;
   }
 
   .page6-content h2 {
@@ -1488,7 +1495,7 @@ border-top-right-radius: 10%;
   }
 
   #container3D {
-    height: 10vh;
+    height: 1vh;
   }
 
 }
