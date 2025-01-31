@@ -730,7 +730,7 @@ font-family: 'sig';
 
 .image-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 columns for mobile */
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid */
   gap: 10px; /* Spacing between images */
   padding: 20px;
 }
@@ -738,8 +738,37 @@ font-family: 'sig';
 .image-grid img {
   width: 100%;
   height: auto;
-  border-radius: 10px; /* Rounded corners for a creative look */
+  border-radius: 10px; /* Rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.image-grid img:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+/* Creative Overlay Effect */
+.image-grid .image-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.image-grid .image-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3); /* Dark overlay */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-grid .image-container:hover::after {
+  opacity: 1; /* Show overlay on hover */
 }
 
 /* Media Query for Mobile */
@@ -756,6 +785,11 @@ font-family: 'sig';
     width: 100%; /* Full width on mobile */
     height: auto; /* Adjust height based on content */
     padding: 20px 0; /* Add some padding */
+  }
+
+  .image-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Adjust for smaller screens */
+    gap: 8px; /* Reduce gap for smaller screens */
   }
 }
   .loading-screen{
