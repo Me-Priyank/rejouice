@@ -104,7 +104,9 @@ function haminate() {
 // Trigger the hamburger animation on load
 document.addEventListener("DOMContentLoaded", () => {
   // Call the haminate function directly
-
+  if(window.innerWidth > 768){
+    haminate();
+  }
   // OR simulate a click on the hamburger menu (if it's an element in your DOM)
   const burgerButton = document.querySelector(".hamburger-button"); // Replace with the correct selector
   if (burgerButton) {
