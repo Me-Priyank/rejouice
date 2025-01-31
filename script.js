@@ -503,8 +503,11 @@ gsap.from(".page2-content p", {
 
   
 }
-page2Animation();
 
+if(window.innerWidth > 740){
+  page2Animation();
+
+}
 
 function p4(){
   gsap.registerPlugin(ScrollTrigger);
