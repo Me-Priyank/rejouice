@@ -690,32 +690,74 @@ font-family: 'sig';
   z-index: 0;
 }
 
-#swipper{
-    height: 60vh;
-    width: 126%;
-    background-color: #faf8f3;
+#swipper {
+  height: 60vh;
+  width: 126%;
+  background-color: #faf8f3;
 }
+
+/* Desktop Swiper Styles */
+.desktop-swiper {
+  display: block; /* Show by default */
+}
+
 .swiper-container {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  background: #faf8f3;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 19%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Mobile Layout Styles */
+.mobile-layout {
+  display: none; /* Hide by default */
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns for mobile */
+  gap: 10px; /* Spacing between images */
+  padding: 20px;
+}
+
+.image-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px; /* Rounded corners for a creative look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+/* Media Query for Mobile */
+@media screen and (max-width: 768px) {
+  .desktop-swiper {
+    display: none; /* Hide Swiper on mobile */
   }
 
-  .swiper-slide {
-    width: 100% ;
-    text-align: center;
-    font-size: 18px;
-    background: #faf8f3;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-end;
+  .mobile-layout {
+    display: block; /* Show mobile layout */
   }
 
-  .swiper-slide img {
-    display: block;
-    width: 19%;
-    height: auto;
-    object-fit: cover;
+  #swipper {
+    width: 100%; /* Full width on mobile */
+    height: auto; /* Adjust height based on content */
+    padding: 20px 0; /* Add some padding */
   }
+}
   .loading-screen{
     position: fixed;
     top: 0;
@@ -1273,7 +1315,7 @@ border-top-right-radius: 10%;
     font-size: 36px;
   }
 
-  #swipper {
+  /* #swipper {
     width: 100%;
     height: 40vh;
     margin-top: -15%;
@@ -1282,7 +1324,7 @@ border-top-right-radius: 10%;
   .swiper-slide img {
     margin-left: 1%;
     width: 45%;
-  }
+  } */
 
   /* Container 3D */
   #container3D {

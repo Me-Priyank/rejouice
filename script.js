@@ -543,8 +543,12 @@ if(window.innerWidth > 740){
   p4();
 }
 
-function swiper(){
-  var swiper = new Swiper('.swiper-container', {
+function swiper() {
+  const isMobile = window.innerWidth <= 768;
+
+  if (!isMobile) {
+    // Initialize Swiper only for desktop
+    var swiper = new Swiper('.swiper-container', {
       slidesPerView: 1,
       spaceBetween: 10,
       loop: true, // Enable infinite loop
@@ -562,8 +566,15 @@ function swiper(){
         clickable: true,
       },
     });
+  }
 }
+
 swiper();
+
+// Reinitialize Swiper on window resize (if needed)
+window.addEventListener('resize', function () {
+  swiper();
+});
 
 // function loader(){
 // var tl = gsap.timeline()
