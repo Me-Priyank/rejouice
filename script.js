@@ -104,7 +104,6 @@ function haminate() {
 // Trigger the hamburger animation on load
 document.addEventListener("DOMContentLoaded", () => {
   // Call the haminate function directly
-  haminate();
 
   // OR simulate a click on the hamburger menu (if it's an element in your DOM)
   const burgerButton = document.querySelector(".hamburger-button"); // Replace with the correct selector
@@ -606,7 +605,10 @@ gsap.from(" #page6  span", {
   }
 });
 }
-page6Animation();
+
+if(window.innerWidth > 768){
+  page6Animation();
+}
 
 document.querySelector('.btn-6').addEventListener('mouseenter', function (e) {
   const span = this.querySelector('span');
@@ -679,40 +681,43 @@ exitBtn.addEventListener("click", () => {
 function initLocoScroll() {
   gsap.registerPlugin(ScrollTrigger);
 
-  const locoScroll = new LocomotiveScroll({
-    el: document.querySelector("#main"),
-    smooth: true,
-    smartphone: {
-      smooth: false, // Disable smooth scroll on mobile
-      breakpoint: 768
-    },
-    tablet: {
-      smooth: false, // Disable smooth scroll on tablet
-      breakpoint: 1024
-    }
-  });
+  const isMobile = window.innerWidth <= 768;
 
-  // Update ScrollTrigger on scroll
-  locoScroll.on("scroll", ScrollTrigger.update);
+  if (!isMobile) {
+    const locoScroll = new LocomotiveScroll({
+      el: document.querySelector("#main"),
+      smooth: true,
+      smartphone: {
+        smooth: false, // Disable smooth scroll on mobile
+        breakpoint: 768
+      },
+      tablet: {
+        smooth: false, // Disable smooth scroll on tablet
+        breakpoint: 1024
+      }
+    });
 
-  // Sync ScrollTrigger with Locomotive
-  ScrollTrigger.scrollerProxy("#main", {
-    scrollTop(value) {
-      return arguments.length ? locoScroll.scrollTo(value, 0, 0) : locoScroll.scroll.instance.scroll.y;
-    },
-    getBoundingClientRect() {
-      return {top: 0, left: 0, width: window.innerWidth, height: window.innerHeight};
-    },
-    pinType: document.querySelector("#main").style.transform ? "transform" : "fixed"
-  });
+    // Update ScrollTrigger on scroll
+    locoScroll.on("scroll", ScrollTrigger.update);
 
-  // Refresh on window resize
-  ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
-  ScrollTrigger.refresh();
+    // Sync ScrollTrigger with Locomotive
+    ScrollTrigger.scrollerProxy("#main", {
+      scrollTop(value) {
+        return arguments.length ? locoScroll.scrollTo(value, 0, 0) : locoScroll.scroll.instance.scroll.y;
+      },
+      getBoundingClientRect() {
+        return {top: 0, left: 0, width: window.innerWidth, height: window.innerHeight};
+      },
+      pinType: document.querySelector("#main").style.transform ? "transform" : "fixed"
+    });
 
-  // Cleanup on destroy
-  ScrollTrigger.defaults({ scroller: window });
-  return locoScroll;
+    // Refresh on window resize
+    ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
+    ScrollTrigger.refresh();
+  } else {
+    // Enable basic scroll animations for mobile
+    ScrollTrigger.defaults({ scroller: window });
+  }
 }
 
 // Initialize animations after DOM is loaded
@@ -810,7 +815,7 @@ function initResponsiveAnimations() {
     gsap.to("#right2", {
       scrollTrigger: {
         trigger: "#page2",
-        scroller: "#main",
+        scroller: window,
         start: "top top",
         end: "bottom center",
         scrub: 1,
@@ -826,7 +831,7 @@ function initResponsiveAnimations() {
     gsap.to("#right3", {
       scrollTrigger: {
         trigger: "#page2",
-        scroller: "#main",
+        scroller: window,
         start: "top center",
         end: "bottom center",
         scrub: 1,
@@ -842,7 +847,7 @@ function initResponsiveAnimations() {
     gsap.to("#fanta", {
       scrollTrigger: {
         trigger: "#container3D",
-        scroller: "#main",
+        scroller: window,
         start: "top -10%",
         end: "bottom 110%",
         scrub: true,
@@ -857,15 +862,29 @@ function initResponsiveAnimations() {
 
     // Adjust text animations for mobile
     gsap.from(".elem span", {
-      y: 100, // Reduced distance
-      stagger: 0.8, // Faster stagger
+      y: 100,
+      stagger: 0.8,
       duration: 0.3,
       scrollTrigger: {
         trigger: "#page2",
-        scroller: "#main",
+        scroller: window, // Use window as the scroller on mobile
         start: "top 97%",
         end: "top 76%",
         scrub: 1
+      }
+    });
+
+    // Adjust other animations similarly
+    gsap.from(".page2-content p", {
+      y: 250,
+      stagger: 1.2,
+      duration: 1,
+      scrollTrigger: {
+        trigger: "#page2",
+        scroller: window, // Use window as the scroller on mobile
+        start: "top 97%",
+        end: "top 76%",
+        scrub: 2
       }
     });
 
@@ -876,7 +895,7 @@ function initResponsiveAnimations() {
       duration: 4,
       scrollTrigger: {
         trigger: "#page6",
-        scroller: "#main",
+        scroller: window,
         start: "top 80%",
         end: "bottom bottom",
         scrub: 1
@@ -928,5 +947,10 @@ function enableMobileTouch() {
 }
 
 // Initialize on load and resize
-window.addEventListener('resize', enableMobileTouch);
-document.addEventListener("DOMContentLoaded", enableMobileTouch);
+document.addEventListener("DOMContentLoaded", function() {
+  initResponsiveAnimations();
+});
+
+window.addEventListener('resize', function() {
+  initResponsiveAnimations();
+});

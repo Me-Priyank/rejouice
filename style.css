@@ -1397,23 +1397,7 @@ border-top-right-radius: 10%;
 
 @media screen and (max-width: 768px) {
   .loading-screen {
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-  }
-
-  .loader {
-    width: 90vw; /* Reduced width for mobile */
-    height: 40px; /* Reduced height */
-    left: 5vw; /* Center horizontally */
-  }
-
-  .loader-1, .loader-2, .loader-3, 
-  .loader-4, .loader-5, .loader-6 {
-    height: 40px;
-    transform-origin: center;
+    display: none !important;
   }
 }
 
@@ -1479,7 +1463,7 @@ border-top-right-radius: 10%;
     
     display: flex;
     flex-direction: row;
-    margin-top: 0px;
+    margin-top: 40px;
     text-align: center;
   }
 
