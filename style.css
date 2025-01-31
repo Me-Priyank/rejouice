@@ -859,7 +859,47 @@ font-family: 'sig';
 }
 
 
+#mobile-loader {
+  display: none; /* Hide by default */
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: #000;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  gap: 10px;
+}
 
+#mobile-loader h2 {
+  font-size: 6vw;
+  font-weight: 100;
+  font-family: 'gome';
+}
+
+#mobile-loader img {
+  width: 10vw;
+}
+
+@media screen and (min-width: 769px) {
+  #mobile-loader {
+    display: none; /* Hide mobile loader on desktop */
+  }
+}
+
+/* Show Mobile Loader on Mobile Devices */
+@media screen and (max-width: 768px) {
+  .loading-screen {
+    display: none; /* Hide desktop loader on mobile */
+  }
+
+  #mobile-loader {
+    display: flex; /* Show mobile loader on mobile */
+  }
+}
 
 
 .black-cursor{
@@ -1781,6 +1821,12 @@ html.has-scroll-smooth {
     font-size: 12px;
     margin-bottom: 6%;
   }
+
+
+  .p2kah1 .h1 h1{
+transform: translateY(-100%); 
+ }
+
 
   #page3-top h4 span{
     font-size: 12px;

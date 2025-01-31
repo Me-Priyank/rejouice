@@ -1029,3 +1029,157 @@ window.addEventListener('resize', () => {
     document.querySelector('.mobile-sidebar').classList.remove('active');
   }
 });
+
+// mobile loader
+
+if(window.innerWidth <770) {
+  // Function for Mobile Loader Animation
+function mobileLoader() {
+  var tl = gsap.timeline();
+
+  // Animate h2 and img elements
+  tl.from("#mobile-loader h2, #mobile-loader img", {
+    x: 80,
+    opacity: 0,
+    duration: 2,
+    stagger: 0.1,
+  });
+
+  // Make h2 disappear immediately after moving to x:0
+  tl.to("#mobile-loader h2", {
+    opacity: 0,
+    duration: 1,
+  });
+
+  // Move img from x:0 to x:-40 and fade it out
+  tl.to("#mobile-loader img", {
+    x: -40,
+    opacity: 1,
+    rotate:'29deg',
+    scale:2.5,
+    duration: 2,
+  });
+
+  // Fade out the loader
+  tl.to("#mobile-loader", {
+    opacity: 0,
+  });
+
+  // Animate page1-content h1 span
+  tl.from("#page1-content h1 span", {
+    y: 100,
+    opacity: 0,
+    stagger: 0.1,
+    duration: 0.5,
+    delay: -0.5,
+  });
+
+  // Hide the loader after animation
+  tl.to("#mobile-loader", {
+    display: "none",
+  });
+}
+
+// Function for Desktop Loader Animation
+function desktopLoader() {
+  gsap.from(".loader-1", {
+    width: 0,
+    duration: 1,
+    ease: "power2.inOut",
+  });
+
+  gsap.from(".loader-2", {
+    width: 0,
+    delay: 0.9,
+    duration: 1.5,
+    ease: "power2.inOut",
+  });
+
+  gsap.from(".loader-3", {
+    width: 0,
+    delay: 0.9,
+    duration: 2,
+    ease: "power2.inOut",
+  });
+
+  gsap.from(".loader-4", {
+    width: 0,
+    delay: 0.9,
+    duration: 2.5,
+    ease: "power2.inOut",
+  });
+
+  gsap.from(".loader-5", {
+    width: 0,
+    delay: 0.9,
+    duration: 1,
+    ease: "power2.inOut",
+  });
+
+  gsap.from(".loader-6", {
+    width: 0,
+    delay: 0.9,
+    duration: 1,
+    ease: "power2.inOut",
+  });
+
+  gsap.to(".loader", {
+    background: "none",
+    delay: 3,
+    duration: 0.1,
+  });
+
+  gsap.to(".loader", {
+    scale: 40,
+    duration: 1,
+    delay: 5,
+    ease: "power2.inOut",
+  });
+
+  gsap.to(".loader", {
+    rotate: -45,
+    y: 500,
+    x: 2900,
+    duration: 1,
+    delay: 5,
+    ease: "power2.inOut",
+  });
+
+  gsap.to(".loading-screen", {
+    opacity: 0,
+    duration: 0.5,
+    delay: 6.5,
+    ease: "power1.inOut",
+  });
+
+  gsap.to(".loading-screen", {
+    display: "none",
+    duration: 0.5,
+    delay: 6.5,
+    ease: "power1.inOut",
+  });
+}
+
+// Initialize Loader Based on Screen Size
+function initLoader() {
+  const isMobile = window.innerWidth <= 768;
+
+  if (isMobile) {
+    // Apply Mobile Loader Animation
+    mobileLoader();
+  } else {
+    // Apply Desktop Loader Animation
+    desktopLoader();
+  }
+}
+
+// Call the Loader Function on Page Load
+document.addEventListener("DOMContentLoaded", () => {
+  initLoader();
+});
+
+// Reinitialize Loader on Window Resize
+window.addEventListener("resize", () => {
+  initLoader();
+});
+}
