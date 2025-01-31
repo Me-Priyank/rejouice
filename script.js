@@ -1,52 +1,56 @@
 
 
 
-document.addEventListener("DOMContentLoaded", () => {
-  const locoScroll = initLocoScroll();
-
-  // Capsule rotation animation
-  gsap.to("#right3", {
-    scrollTrigger: {
-      trigger: "#page2",
-      scroller: "#main",
-      start: "top center",
-      end: "bottom center",
-      scrub: 1,
-      markers: false,
-      onEnter: () => console.log("Capsule rotation started"),
-      onLeave: () => console.log("Capsule rotation ended")
-    },
-    y:-180,
-    rotate:-12,
-    ease: "none",
-    immediateRender: false
-});
-
-});
-
-
-document.addEventListener("DOMContentLoaded", () => {
-  const locoScroll = initLocoScroll();
-
-  // Capsule rotation animation with height and width increase
-  gsap.to("#right2", {
-    scrollTrigger: {
-      trigger: "#page2",
-      scroller: "#main",
-      start: "top center",
-      end: "bottom center",
-      scrub: 1,
-      markers: false,
-      onEnter: () => console.log("Capsule rotation started"),
-      onLeave: () => console.log("Capsule rotation ended")
-    },
-    y: 100, // Keeps the vertical movement as it was
-    scale: 1.2,
-    rotate:10, // Increases both width and height by 10%
-    ease: "none",
-    immediateRender: false
+if(window.innerWidth > 740){
+  document.addEventListener("DOMContentLoaded", () => {
+    const locoScroll = initLocoScroll();
+  
+    // Capsule rotation animation
+    gsap.to("#right3", {
+      scrollTrigger: {
+        trigger: "#page2",
+        scroller: "#main",
+        start: "top center",
+        end: "bottom center",
+        scrub: 1,
+        markers: false,
+        onEnter: () => console.log("Capsule rotation started"),
+        onLeave: () => console.log("Capsule rotation ended")
+      },
+      y:-180,
+      rotate:-12,
+      ease: "none",
+      immediateRender: false
   });
-});
+  
+  });
+}
+
+
+if(window.innerWidth > 740){
+  document.addEventListener("DOMContentLoaded", () => {
+    const locoScroll = initLocoScroll();
+  
+    // Capsule rotation animation with height and width increase
+    gsap.to("#right2", {
+      scrollTrigger: {
+        trigger: "#page2",
+        scroller: "#main",
+        start: "top center",
+        end: "bottom center",
+        scrub: 1,
+        markers: false,
+        onEnter: () => console.log("Capsule rotation started"),
+        onLeave: () => console.log("Capsule rotation ended")
+      },
+      y: 100, // Keeps the vertical movement as it was
+      scale: 1.2,
+      rotate:10, // Increases both width and height by 10%
+      ease: "none",
+      immediateRender: false
+    });
+  });
+}
 
 document.addEventListener("DOMContentLoaded", () => {
   const locoScroll = initLocoScroll();
@@ -534,7 +538,10 @@ function p4(){
     }
   });
 }
-p4();
+
+if(window.innerWidth > 740){
+  p4();
+}
 
 function swiper(){
   var swiper = new Swiper('.swiper-container', {
@@ -814,36 +821,7 @@ function initResponsiveAnimations() {
     // Adjust page2 animations for mobile
     
 
-    gsap.to("#right2", {
-      scrollTrigger: {
-        trigger: "#page2",
-        scroller: window,
-        start: "top top",
-        end: "bottom center",
-        scrub: 1,
-        markers: false
-      },
-      y: 0, // Remove vertical movement on mobile
-      scale: 1, // Reduce scale effect
-      rotate: 0, // Remove rotation on mobile
-      ease: "none",
-      immediateRender: false
-    });
-
-    gsap.to("#right3", {
-      scrollTrigger: {
-        trigger: "#page2",
-        scroller: window,
-        start: "top center",
-        end: "bottom center",
-        scrub: 1,
-        markers: false
-      },
-      y: 0,
-      rotate: 0,
-      ease: "none",
-      immediateRender: false
-    });
+   
 
     // Adjust fanta bottle animation for mobile
     gsap.to("#fanta", {

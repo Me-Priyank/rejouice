@@ -1173,15 +1173,16 @@ border-top-right-radius: 10%;
     height: 550px;
     width: 90%;
     margin: 0;
-    margin-left: 7%;
+    margin-left: 5.5%;
 
-    rotate: 0;
+    rotate: 0deg;
     padding: 20px;
   }
 
   #imagewala, #imagewalaxxx {
     width: 200px;
     height: 200px;
+    margin-left: 0.5%;
   }
 
   #right3 #imagewala,#right3 #imagewalaxxx {
@@ -1189,10 +1190,15 @@ border-top-right-radius: 10%;
     height: 210px;
   }
 #right3 .capsule2{
+  margin-top: -90%;
+  rotate: 0deg;
   height: 480px;
+  width: 340px;
+  margin-left: 5.5%;
+
 }
   .textC {
-    margin-top: 0px;
+    margin-top: 10px;
   }
 
   #textCC h2 {
@@ -1227,6 +1233,20 @@ border-top-right-radius: 10%;
     padding: 50px 20px;
     height: 10vh;
     margin-top: -10%;
+  }
+
+  #page4 span p {
+    opacity: 10 !important;
+  }
+
+  #bang{
+    margin-top: -64%;
+    font-size: 10px;
+  }
+
+  #full{
+    font-size: 10px;
+
   }
 
   .page2-content span p {
