@@ -1321,7 +1321,6 @@ border-top-right-radius: 10%;
 transform: translateY(290%);
   }
   #bang{
-    margin-top: -64%;
     font-size: 10px;
   }
 
@@ -1469,6 +1468,15 @@ transform: translateY(290%);
 
   #page3-top h2 {
     font-size: 3vw;
+  }
+
+
+  #page3-top h4{
+    font-size: 200px;
+  }
+
+  #tr{
+    font-size: 200px !important;
   }
 
   .page3-elem .box {
@@ -1764,7 +1772,19 @@ html.has-scroll-smooth {
     right: 0;
     transform: translateX(0);
   }
+  #page3-top h4{
+    font-size: 12px;
+    margin-bottom: 6%;
+  }
 
+  #page3-top h4 span{
+    font-size: 12px;
+  }
+
+  #tr{
+    font-size: 12px !important;
+text-align: center;
+  }
   .burger-menu {
     z-index: 10000000;
   }
