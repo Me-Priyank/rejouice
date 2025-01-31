@@ -811,7 +811,7 @@ function initResponsiveAnimations() {
       scrollTrigger: {
         trigger: "#page2",
         scroller: "#main",
-        start: "top center",
+        start: "top top",
         end: "bottom center",
         scrub: 1,
         markers: false
