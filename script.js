@@ -950,3 +950,82 @@ window.addEventListener('resize', function() {
 });
 
 }
+
+
+var burgerSidebar = document.getElementsByClassName("sidebar")[0]; // Access the first element
+var burgerTop = document.getElementsByClassName("top");
+var burgerBot = document.getElementsByClassName("bottom");
+var burgerMid = document.getElementsByClassName("middle");
+var sideText = document.getElementsByClassName("sidetext");
+var burgerWhole = document.querySelectorAll(".top, .bottom, .middle");
+
+var tl = new TimelineMax({ paused: true, reversed: true });
+
+tl.timeScale(1);
+tl
+  .to(burgerTop, 0.5, { y: 11, yoyo: true, ease: Power1.easeInOut }) // Reduced from 0.7 to 0.5
+  .to(burgerBot, 0.5, { y: -11, yoyo: true, ease: Power1.easeInOut }, "-=0.5") // Adjusted sync timing
+  .to(burgerTop, 0.6, { rotation: 585 }) // Reduced from 0.9 to 0.6
+  .to(burgerMid, 0.6, { rotation: 585 }, "-=0.6") // Adjusted sync timing
+  .to(burgerBot, 0.6, { rotation: 675 }, "-=0.6") // Adjusted sync timing
+  .to(burgerWhole, 0.1, { css: { borderColor: "#000" }, ease: Power1.easeOut }, "-=0.6")
+  .to(burgerSidebar, 0.6, { x: -1536, ease: Power1.easeOut }, "-=0.2"); // Reduced from 0.9 to 0.6
+  
+
+
+function haminate() {
+  tl.reversed() ? tl.play() : tl.reverse();
+}
+
+
+
+
+// Trigger the hamburger animation on load
+document.addEventListener("DOMContentLoaded", () => {
+  // Call the haminate function directly
+  if(window.innerWidth > 768){
+    haminate();
+  }
+  // OR simulate a click on the hamburger menu (if it's an element in your DOM)
+  const burgerButton = document.querySelector(".hamburger-button"); // Replace with the correct selector
+  if (burgerButton) {
+      burgerButton.click();
+  }
+});
+
+
+// Update JavaScript
+function toggleMobileSidebar() {
+  const mobileSidebar = document.querySelector('.mobile-sidebar');
+  mobileSidebar.classList.toggle('active');
+}
+
+// Modified haminate function
+function haminate() {
+  if (window.innerWidth > 768) {
+    // Desktop animation
+    tl.reversed() ? tl.play() : tl.reverse();
+  } else {
+    // Mobile toggle
+    toggleMobileSidebar();
+  }
+}
+
+// Close sidebar when clicking outside on mobile
+document.addEventListener('click', (e) => {
+  if (window.innerWidth > 768) return;
+  
+  const sidebar = document.querySelector('.mobile-sidebar');
+  const burger = document.querySelector('.burger-menu');
+  
+  if (!sidebar.contains(e.target) && !burger.contains(e.target)) {
+    sidebar.classList.remove('active');
+  }
+});
+
+// Handle window resize
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 768) {
+    document.querySelector('.mobile-sidebar').classList.remove('active');
+  }
+});
