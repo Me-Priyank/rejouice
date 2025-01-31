@@ -1194,8 +1194,12 @@ border-top-right-radius: 10%;
   rotate: 0deg;
   height: 480px;
   width: 340px;
-  margin-left: 4%;
+  margin-left: 1%;
 
+}
+
+#right3{
+  margin-right: 4%;
 }
   .textC {
     margin-top: 10px;
