@@ -5,14 +5,14 @@
 
 @font-face {
     font-family: nb;
-    src: url(./NBInternationalProBoo.ttf) format('truetype');
+    src: url(public/fonts/NBInternationalProBoo.ttf) format('truetype');
     /* Add more font formats for broader browser support */
     /* e.g., woff, woff2, etc. */
   }
 
   @font-face {
     font-family: tapthat;
-    src: url(./Minecraft.ttf) format('truetype');
+    src: url(public/fonts/Minecraft.ttf) format('truetype');
     /* Add more font formats for broader browser support */
     /* e.g., woff, woff2, etc. */
   }
@@ -20,35 +20,35 @@
 
   @font-face {
     font-family: milk;
-    src: url(./Milker.otf) format('truetype');
+    src: url(public/fonts/Milker.otf) format('truetype');
     /* Add more font formats for broader browser support */
     /* e.g., woff, woff2, etc. */
   }
 
   @font-face {
     font-family: gome;
-    src: url(./gome-pixel.rounded.otf) format('truetype');
+    src: url(public/fonts/gome-pixel.rounded.otf) format('truetype');
     /* Add more font formats for broader browser support */
     /* e.g., woff, woff2, etc. */
   }
 
   @font-face {
     font-family: sig;
-    src: url(./659dbdfd5a080be8d348316f_PPNeueMachina_\ Light\ \(1\).ttf) format('truetype');
+    src: url(public/fonts/659dbdfd5a080be8d348316f_PPNeueMachina_\ Light\ \(1\).ttf) format('truetype');
     /* Add more font formats for broader browser support */
     /* e.g., woff, woff2, etc. */
   }
 
   @font-face {
     font-family: Tt;
-    src: url(./IBMPlexMono-Medium-e61d37ab.ttf) format('truetype');
+    src: url(public/fonts/IBMPlexMono-Medium-e61d37ab.ttf) format('truetype');
     /* Add more font formats for broader browser support */
     /* e.g., woff, woff2, etc. */
   }
 
   @font-face {
     font-family: rj;
-    src: url(./Rejouice-Headline.ttf) format('truetype');
+    src: url(public/fonts/Rejouice-Headline.ttf) format('truetype');
   }
 *{
     margin: 0;
@@ -112,7 +112,7 @@ html, body {
   
   /* Sidebar */
   .sidebar {
-    background-image: url("Screenshot\ 2025-01-26\ 101539.png");
+    background-image: url("public/images/Screenshot\ 2025-01-26\ 101539.png");
     width: 100%;
     height: 100vh;
     position: fixed;

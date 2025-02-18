@@ -1,0 +1,157 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+
+section.hero-img, section.about-img{
+    height: 200vh;
+}
+
+.hero{
+    background-color: #000;
+}
+
+.about{
+    background-color: #000;
+}
+
+.footer{
+    background-color: #000;
+}
+
+img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 12vw;
+    font-weight: 600;
+    letter-spacing: -0.025em;
+    color: #a4a1a1;
+    opacity: 0.5;
+}
+
+.blocks-container{
+    position: absolute;
+    height: 400px;
+    width: 100%;
+}
+
+.blocks-container.top{
+    top: 0;
+}
+
+.blocks-container.bottom{
+    bottom: 0;
+}
+
+.blocks-row{
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+}
+
+.block{
+    height: 100%;
+    width: 100%;
+    transition: opacity 100ms;
+}
+
+.blocks-container.top .blocks-row .block{
+    opacity: 1;
+}
+
+.blocks-container.bottom .blocks-row .block{
+    opacity: 0;
+}
+
+.hero-img .blocks-container.top .blocks-row .block{
+    background: #000;
+}
+
+.hero-img .blocks-container.bottom .blocks-row .block{
+    background: #000;
+}
+
+.about-img .blocks-container.top .blocks-row .block{
+    background: #000;
+}
+
+.about-img .blocks-container.bottom .blocks-row .block{
+    background: #000;
+}
+
+
+/* Add these media queries at the end of your about.css file */
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 16vw; /* Larger text for mobile readability */
+        opacity: 0.7; /* More visible text */
+    }
+
+    section.hero-img, 
+    section.about-img {
+        height: 150vh; /* Reduce tall sections for mobile */
+    }
+
+    .blocks-container {
+        height: 300px; /* Smaller block containers */
+    }
+
+    .blocks-row {
+        height: 75px; /* Smaller block rows */
+    }
+
+    /* Optimize block animation timing for touch scrolling */
+    .block {
+        transition: opacity 50ms;
+    }
+
+    /* Adjust spacing for smaller screens */
+    .blocks-container.top {
+        top: -10px;
+    }
+
+    .blocks-container.bottom {
+        bottom: -10px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 18vw; /* Even larger text for very small screens */
+        letter-spacing: -0.015em;
+    }
+
+    section.hero-img, 
+    section.about-img {
+        height: 120vh; /* Further reduce tall sections */
+    }
+}
