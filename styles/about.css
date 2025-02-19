@@ -1,3 +1,64 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400|Raleway:300);
+
+
+
+
+@font-face {
+    font-family: nb;
+    src: url(/public/fonts/NBInternationalProBoo.ttf) format('truetype');
+    /* Add more font formats for broader browser support */
+    /* e.g., woff, woff2, etc. */
+  }
+
+  @font-face {
+    font-family: tapthat;
+    src: url(/public/fonts/Minecraft.ttf) format('truetype');
+    /* Add more font formats for broader browser support */
+    /* e.g., woff, woff2, etc. */
+  }
+
+
+  @font-face {
+    font-family: milk;
+    src: url(/public/fonts/Milker.otf) format('truetype');
+    /* Add more font formats for broader browser support */
+    /* e.g., woff, woff2, etc. */
+  }
+
+  @font-face {
+    font-family: gome;
+    src: url(/public/fonts/gome-pixel.rounded.otf) format('truetype');
+    /* Add more font formats for broader browser support */
+    /* e.g., woff, woff2, etc. */
+  }
+
+  @font-face {
+    font-family: sig;
+    src: url(/public/fonts/659dbdfd5a080be8d348316f_PPNeueMachina_\ Light\ \(1\).ttf) format('truetype');
+    /* Add more font formats for broader browser support */
+    /* e.g., woff, woff2, etc. */
+  }
+
+  @font-face {
+    font-family: Tt;
+    src: url(/public/fonts/IBMPlexMono-Medium-e61d37ab.ttf) format('truetype');
+    /* Add more font formats for broader browser support */
+    /* e.g., woff, woff2, etc. */
+  }
+
+  @font-face {
+    font-family: rj;
+    src: url(/public/fonts/Rejouice-Headline.ttf) format('truetype');
+  }
+
+
+
+
+
+
+
+
+
 *{
     padding: 0;
     margin: 0;
@@ -9,7 +70,10 @@ html,body{
     width: 100%;
 }
 
+.container{
+    overflow: hidden;
 
+}
 
 
 
@@ -155,3 +219,120 @@ h1{
         height: 120vh; /* Further reduce tall sections */
     }
 }
+
+#page6{
+    margin-top: -10%;
+      height: 10vh;
+      width: 100%;
+      background-color: black;
+      bottom: 0;
+      color: white;
+  }
+
+  #page6 h1{
+    margin-top: 2%;
+     font-size: 20vw;
+     font-weight: 10;
+     line-height: 27vw;
+ }
+ #page6  span{
+   margin-top: 15%;
+   font-size: 26vw;
+     display: inline-block;
+     color: white;
+     font-family: 'gome';
+ }
+
+ .page6-content{
+    margin-top: 10%;
+      height: 20vh;
+      width: 20vw;
+      display: flex;
+      padding: 10px;
+      color: white;
+  }
+
+  .page6-content #pehla{
+    font-family: 'sig';
+   margin-left: 20%;
+   margin-top: 20%;
+  }
+  
+  .page6-content #dusra{
+    font-family: 'sig';
+  
+    margin-left: 80%;
+    margin-top: 20%;
+  }
+  
+  .page6-content #teesra{
+    font-family: 'sig';
+  
+    margin-left: 80%;
+    margin-top: 20%;
+  }
+  
+  .page6-content #chautha{
+    font-family: 'sig';
+  
+    margin-left: 130%;
+    margin-top: 20%;
+  }
+  
+  .page6-content #pehla p{
+    font-size: 20px;
+    font-family: 'sig';
+  }
+  
+  .page6-content #dusra p{
+    font-size: 20px;
+    font-family: 'sig';
+  
+  }
+  
+  .page6-content #teesra p{
+    font-size: 20px;
+    font-family: 'sig';
+  
+  }
+  
+  .page6-content #chautha p{
+    margin-top: 5%;
+    font-size: 15px;
+    font-family: 'sig';
+    text-decoration: underline;
+  }
+
+  .animated-btn {
+    padding: 15px 80px;
+    font-size: 18px;
+    border: none;
+    background-color: #ffa600;
+    color: white;
+    cursor: pointer;
+    border-radius: 0;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    margin-bottom: 70%;
+  }
+  
+  .animated-btn::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    background-color: #fff5e6;
+    transition: height 0.5s ease;
+    z-index: -1;
+  }
+  
+  .animated-btn:hover {
+    color: #333;
+  }
+  
+  .animated-btn:hover::before {
+    height: 100%;
+  }

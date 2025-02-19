@@ -53,3 +53,27 @@ document.addEventListener("DOMContentLoaded", ()=>{
         })
     }
 });
+
+
+function page6Animation(){
+    gsap.from(" #page6  span", {
+      y: 350,
+      stagger: 3.9,
+      duration: 9,
+      scrollTrigger: {
+          trigger: "#page6",
+          scroller: "body",
+          start: "top 57%",
+          end: "bottom bottom",
+          // markers: true,
+          scrub: 2,
+          delay:40
+      }
+    });
+    }
+    
+    if(window.innerWidth > 768){
+      page6Animation();
+    }
+
+    
