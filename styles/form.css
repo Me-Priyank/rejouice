@@ -1,0 +1,602 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400|Raleway:300);
+
+
+
+
+@font-face {
+    font-family: nb;
+    src: url(/public/fonts/NBInternationalProBoo.ttf) format('truetype');
+    /* Add more font formats for broader browser support */
+    /* e.g., woff, woff2, etc. */
+  }
+
+  @font-face {
+    font-family: tapthat;
+    src: url(/public/fonts/Minecraft.ttf) format('truetype');
+    /* Add more font formats for broader browser support */
+    /* e.g., woff, woff2, etc. */
+  }
+
+
+  @font-face {
+    font-family: milk;
+    src: url(/public/fonts/Milker.otf) format('truetype');
+    /* Add more font formats for broader browser support */
+    /* e.g., woff, woff2, etc. */
+  }
+
+  @font-face {
+    font-family: gome;
+    src: url(/public/fonts/gome-pixel.rounded.otf) format('truetype');
+    /* Add more font formats for broader browser support */
+    /* e.g., woff, woff2, etc. */
+  }
+
+  @font-face {
+    font-family: sig;
+    src: url(/public/fonts/659dbdfd5a080be8d348316f_PPNeueMachina_\ Light\ \(1\).ttf) format('truetype');
+    /* Add more font formats for broader browser support */
+    /* e.g., woff, woff2, etc. */
+  }
+
+  @font-face {
+    font-family: Tt;
+    src: url(/public/fonts/IBMPlexMono-Medium-e61d37ab.ttf) format('truetype');
+    /* Add more font formats for broader browser support */
+    /* e.g., woff, woff2, etc. */
+  }
+
+  @font-face {
+    font-family: rj;
+    src: url(/public/fonts/Rejouice-Headline.ttf) format('truetype');
+  }
+
+
+
+
+
+:root {
+    --primary-color: #ffffff;
+    --bg-color: #ffffff;
+    --text-color: #ffffff;
+    --input-bg: rgba(255, 255, 255, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,html {
+    background-color: #000000;
+    color: #ffffff;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: -10%;
+
+}
+
+
+#mainWala{
+    display: flex;
+    position: relative;
+    height: 100vh;
+}
+
+.imgWalaa{
+  
+  height: 100%;
+  width: 50%;
+  background-color: rgb(0, 0, 0);
+}
+.container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-left: 6px dashed #ffa600;
+
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: 'tapthat' !important;
+
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-family: 'sig' !important;
+    line-height: 1.2;
+
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-text {
+    line-height: 4;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    background: var(--input-bg);
+    border: 1px solid var(--text-color);
+    padding: 0.5rem 1rem;
+    color: var(--text-color);
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+select {
+    cursor: pointer;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-left: 1rem;
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: var(--primary-color);
+}
+
+.submit-btn {
+    background: var(--text-color);
+    color: black;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 100px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    transition: transform 0.2s ease;
+    margin-top: 2rem;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+}
+
+.arrow {
+    transition: transform 0.2s ease;
+}
+
+.submit-btn:hover .arrow {
+    transform: translateX(5px);
+}
+
+
+
+.img{
+    height: 50%;
+    width: 30%;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'tapthat';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(30%,40%);
+}
+
+.img h1{
+text: nowrap;
+font-family: 'gome';
+font-size: 60px;
+}
+
+#bhaap{
+    height: 90px;
+    width: 90px;
+    z-index: 2;
+    transform: translate(-10%,110%);
+}
+
+#ulta{
+    height: 90px;
+    width: 90px;
+    z-index: 3;
+    transform: translate(-10%,120%);
+}
+
+#cup{
+    height: 220px;
+    width: 220px;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+    
+    .form {
+        gap: 1.5rem;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+    #page6 {
+      padding: 40px 20px;
+  
+    }
+  
+    .page6-content {
+      display: flex;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      width: 100%;
+      height: 90vh;
+      margin-top: 80px;
+    }
+  
+    #pehla, #dusra, #teesra, #chautha {
+      margin: 0;
+      text-align: left;
+    }
+  
+    #chautha {
+      grid-column: 1 / -1;
+      text-align: center;
+    }
+  
+    .footer-h1 {
+      
+      display: flex;
+      flex-direction: row;
+      margin-top: 40px;
+      text-align: center;
+    }
+  
+  
+    .footer-h1 span {
+      
+      margin-top: 500%;
+      margin-left: -2%;
+      width: 200px;
+    }
+    #page6 {
+      height: auto;
+      padding: 50px auto;
+    }
+  
+    .page6-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-top: 0;
+    }
+  
+    .page6-content #pehla,
+    .page6-content #dusra,
+    .page6-content #teesra,
+    .page6-content #chautha {
+      margin: 20px 0;
+      text-align: center;
+      margin-top: -4%;
+    }
+  
+    .footer-h1 h1 {
+      font-size: 48px;
+      
+    }
+  
+    /* Buttons */
+    .animated-btn,
+    .animated-btn22 {
+      padding: 12px 40px;
+      font-size: 16px;
+      margin: 20px 0;
+    }
+  }
+  
+  
+ 
+
+
+
+
+
+#page6{
+  margin-top: -10%; /* Adjust if needed */
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  color: white;
+  
+
+  }
+
+  #page6 h1{
+    margin-top: 2%;
+     font-size: 20vw;
+     font-weight: 10;
+     line-height: 27vw;
+ }
+ #page6  span{
+   margin-top: 15%;
+   font-size: 26vw;
+     display: inline-block;
+     color: white;
+     font-family: 'gome';
+ }
+
+ .page6-content{
+    margin-top: 10%;
+      height: 20vh;
+      width: 20vw;
+      display: flex;
+      padding: 10px;
+      color: white;
+  }
+
+  .page6-content #pehla{
+    font-family: 'sig';
+   margin-left: 20%;
+   margin-top: 20%;
+  }
+  
+  .page6-content #dusra{
+    font-family: 'sig';
+  
+    margin-left: 80%;
+    margin-top: 20%;
+  }
+  
+  .page6-content #teesra{
+    font-family: 'sig';
+  
+    margin-left: 80%;
+    margin-top: 20%;
+  }
+  
+  .page6-content #chautha{
+    font-family: 'sig';
+  
+    margin-left: 130%;
+    margin-top: 20%;
+  }
+  
+  .page6-content #pehla p{
+    font-size: 20px;
+    font-family: 'sig';
+  }
+  
+  .page6-content #dusra p{
+    font-size: 20px;
+    font-family: 'sig';
+  
+  }
+  
+  .page6-content #teesra p{
+    font-size: 20px;
+    font-family: 'sig';
+  
+  }
+  
+  .page6-content #chautha p{
+    margin-top: 5%;
+    font-size: 15px;
+    font-family: 'sig';
+    text-decoration: underline;
+  }
+
+  .animated-btn {
+    padding: 15px 80px;
+    font-size: 18px;
+    border: none;
+    background-color: #ffa600;
+    color: white;
+    cursor: pointer;
+    border-radius: 0;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    margin-bottom: 70%;
+  }
+  
+  .animated-btn::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    background-color: #fff5e6;
+    transition: height 0.5s ease;
+    z-index: -1;
+  }
+  
+  .animated-btn:hover {
+    color: #333;
+  }
+  
+  .animated-btn:hover::before {
+    height: 100%;
+  }
+
+  .footer{
+    overflow-y: hidden;
+    border-top: 6px dashed #ffa600;
+    position: absolute;
+    width: 100%;
+    
+  }
+
+  /* njb */
+
+
+  /* Mobile-first adjustments */
+@media (max-width: 768px) {
+  #mainWala {
+    flex-direction: column;
+    height: auto;
+    min-height: 0;
+    overflow: hidden !important;
+    
+  }
+
+  .imgWalaa {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-top: -20%;
+    margin-bottom: 60%;
+    height: 50%;
+    width: 50%;
+  }
+
+
+
+ 
+
+  .container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-left: none;
+    border-top: 6px dashed #ffa600;
+    padding: 20px;
+    padding-top: 50px;
+    overflow: hidden !important;
+    
+  }
+
+  .form {
+    gap: 1rem;
+    overflow: hidden !important;
+    
+  }
+
+  .form-text {
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  select {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .checkbox-group {
+    margin-left: 0;
+  }
+
+  .img {
+    position: relative;
+    transform: none;
+    height: auto;
+    padding: 20px;
+    margin-left: 90%;
+
+  }
+
+ 
+
+  .img h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  
+  #page6 {
+    height: auto;
+    padding: 40px 20px;
+  }
+   
+  .footer{
+    width: 90%;
+    
+  }
+  .page6-content {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    gap: 2rem;
+    
+  }
+
+  .page6-content div {
+    margin: 0 !important;
+    text-align: center;
+
+  }
+
+  .animated-btn {
+    margin-bottom: 20px;
+  }
+}
+
+
+
+/** glow **/
+
+/* Add this to your CSS */
+.img h1 {
+  position: relative;
+}
+
+.glow {
+  animation: glow 1.5s ease-in-out infinite alternate;
+  display: inline-block; /* Needed for proper animation */
+}
+
+@keyframes glow {
+  from {
+      text-shadow: 0 0 500px #fff,
+                   0 0 100px #fff,
+                   0 0 15px #ffa600,
+                   0 0 20px #ffa600,
+                   0 0 25px #ffa600;
+  }
+  to {
+      text-shadow: 0 0 100px #fff,
+                   0 0 20px #fff,
+                   0 0 30px #ffa600,
+                   0 0 40px #ffa600,
+                   0 0 500px #ffa600;
+  }
+}

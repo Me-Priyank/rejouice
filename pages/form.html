@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tap That | Creative Agency®️</title>
+    <link rel="stylesheet" href="../styles/form.css">
+</head>
+
+<body>
+
+
+    <div class="imgWalaa">
+        <div class="img">
+
+            <img id="ulta" src="../public/images/ulta.png" alt="">
+            <img id="bhaap" src="../public/images/Screenshot 2025-02-22 222747.png" alt="">
+            <img id="cup" src="../public/images/Untitled design (1).png" alt="">
+            <h1>Let's&nbsp;Discuss <br>
+                Your&nbsp;<span class="glow">Ideas</span></h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <form action="https://api.web3forms.com/submit" method="POST" id="contactForm" class="form">
+            <input type="hidden" name="access_key" value="268748f7-36bf-49ae-a9c1-19dc3859fc57">
+            <input type="checkbox" name="botcheck" style="display: none;">
+            <div class="form-group">
+                <label>My name is</label>
+                <input type="text" id="name" name="name" placeholder="Jane Doe" required>
+            </div>
+
+            <div class="form-text">
+                I'm reaching out because I'm looking
+                <select id="purpose" name="purpose" style="background-color: rgb(31, 30, 30);" required>
+                    <option value="design">to design and develop</option>
+                    <option value="create">to create</option>
+                    <option value="build">to build</option>
+                </select>
+                &nbsp;a &nbsp;
+                <select id="complexity" name="complexity" style="background-color: rgb(31, 30, 30);" required>
+                    <option value="simple">simple and uncomplicated</option>
+                    <option value="complex">complex and detailed</option>
+                </select>
+                <select id="projectType" name="project_type" style="background-color: rgb(31, 30, 30);" required>
+                    <option value="logo">Logo Design</option>
+                    <option value="website">website</option>
+                    <option value="motion graphic">Motion Graphic</option>
+                    <option value="pitch decks">Pitch Decks</option>
+                    <option value="product shoot">Product Shoot</option>
+                    <option value="branding/identity">Branding/Identity</option>
+                </select>
+                &nbsp;for&nbsp;
+                <input type="text" id="business" name="business" placeholder="Business Name, Location" required>
+            </div>
+
+            <div class="form-group">
+                <p>I already have</p>
+                <div class="checkbox-group">
+
+                    <label><input type="checkbox" name="already_have" value="branding"> Branding style</label>
+                    <label><input type="checkbox" name="already_have" value="logo"> Logo</label>
+                    <label><input type="checkbox" name="already_have" value="copy"> Copy</label>
+                    <label><input type="checkbox" name="already_have" value="media"> Photos and videos</label>
+                    <label><input type="checkbox" name="already_have" value="audience"> Target audience insights</label>
+                    <label><input type="checkbox" name="already_have" value="marketing"> Marketing research
+                        insights</label>
+                    <label><input type="checkbox" name="already_have" value="brief"> Brief</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Also,</label>
+                <input type="text" id="additional" name="additional_message" placeholder="Additional Message">
+            </div>
+
+            <div class="form-group">
+                <label>Please contact me via</label>
+                <input type="email" id="contactMethod" name="contact_method" placeholder="Your Email" required>
+                <input type="hidden" name="subject" value="New Project Inquiry">
+
+                <input type="hidden" name="replyto" value="%email%">
+            </div>
+
+            <button type="submit" class="submit-btn">
+                Send
+                <span class="arrow">→</span>
+            </button>
+        </form>
+    </div>
+
+    </div>
+
+    <section class="footer">
+        <div id="page6">
+            <div class="page6-content">
+                <div id="pehla">
+                    <h2>Solutions</h2><br> <br>
+                    <p>Branding</p> <br>
+                    <p>Marketing</p> <br>
+                    <p>Strategy</p> <br>
+                    <p>Hospitality</p>
+                </div>
+                <div id="dusra">
+                    <h2>Insights</h2>
+                    <br> <br>
+                    <p>Case&nbsp;Study</p> <br>
+                    <p>Leadership</p> <br>
+                    <p>News</p>
+                </div>
+                <div id="teesra">
+                    <h2>About</h2>
+                    <br> <br>
+                    <p>Team</p> <br>
+                    <p>Carees</p>
+                </div>
+                <div id="chautha"><button class="animated-btn">Contact&nbsp;Us</button>
+                    <p>Privacy&nbsp;Policy</p>
+                    <p>Trust</p>
+                    <p>©&nbsp;2025&nbsp;TapThat.&nbsp;All&nbsp;rights&nbsp;reserved.</p>
+                </div>
+
+            </div>
+
+            <div class="footer-h1">
+                <span>t</span><span>a</span><span>p</span>&nbsp;&nbsp;<span>t</span><span>h</span><span>a</span><span>t</span>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="../scripts/form.js"></script>
+</body>
+
+</html>
