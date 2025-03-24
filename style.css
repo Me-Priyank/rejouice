@@ -286,7 +286,7 @@ a {
 #cursor {
   height: 7.5vw;
   width: 7.5vw;
-  background-color: #050505;
+  background-color: #FF5700;
   position: fixed;
   border-radius: 50%;
   z-index: 1;
@@ -998,6 +998,41 @@ nav h4 {
   display: flex;
   padding: 10px;
   color: white;
+}
+#pehla{
+  z-index: 999;
+}
+#dusra{
+  z-index: 999;
+}
+#teesra{
+  z-index: 999;
+}
+#chautha{
+  z-index: 999;
+}
+#pehla p:hover{
+  cursor: pointer;
+
+  text-decoration: underline;
+}
+
+#dusra p:hover{
+  cursor: pointer;
+
+  text-decoration: underline;
+}
+
+#teesra p:hover{
+  cursor: pointer;
+
+  text-decoration: underline;
+}
+
+#chautha p:hover{
+  cursor: pointer;
+
+  text-decoration: underline;
 }
 
 #left-6 {
