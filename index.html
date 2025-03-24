@@ -1,301 +1,325 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tap That | Creative Agency®️</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
-    <script src="https://unpkg.com/gsap@3.9.0/dist/gsap.min.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tap That | Creative Agency®️</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/gsap@3.9.0/dist/gsap.min.js"></script>
   <script src="https://unpkg.com/gsap@3.9.0/dist/ScrollTrigger.min.js"></script>
 
 </head>
+
 <body>
-    <!-- Desktop Loader -->
-<div class="loading-screen">
-  <div class="loader">
-    <div class="loader-1 bar"></div>
-    <div class="loader-2 bar"></div>
-    <div class="loader-3 bar"></div>
-    <div class="loader-4 bar"></div>
-    <div class="loader-5 bar"></div>
-    <div class="loader-6 bar"></div>
+  <!-- Desktop Loader -->
+  <div class="loading-screen">
+    <div class="loader">
+      <div class="loader-1 bar"></div>
+      <div class="loader-2 bar"></div>
+      <div class="loader-3 bar"></div>
+      <div class="loader-4 bar"></div>
+      <div class="loader-5 bar"></div>
+      <div class="loader-6 bar"></div>
+    </div>
   </div>
-</div>
 
-<!-- Mobile Loader -->
-<div id="mobile-loader">
-  <h2>Tap</h2>
-  <h2>That</h2>
-  <img src="public/images/TapThat.png" alt="">
-</div>
-    
-    <div id="main">
-        
-        <div id="page1">
-            <div id="cursor">
-              <img src="public/images/bgrem.png" alt="" style="width: 50px;
+  <!-- Mobile Loader -->
+  <div id="mobile-loader">
+    <h2>Tap</h2>
+    <h2>That</h2>
+    <img src="public/images/TapThat.png" alt="">
+  </div>
+
+  <div id="main">
+
+    <div id="page1">
+      <div id="cursor">
+        <img src="public/images/bgrem.png" alt="" style="width: 50px;
               ">
-            </div>
-            
-              
-            <video id="viddoo" autoplay loop muted src="public/videos/file.mp4"></video>
-            
+      </div>
 
-            <div id="page1-content">
-                <nav>
-                    <h3><img id="bgrem2" src="public/images/naam.png" alt=""> <img id="bgrem" src="public/images/bgrem.png" alt=""> </h3>
-                    <h3 id="ventureA">The Venture Agency</h3>
-                    <div></div>
-                </nav>
-                <div class="wrapper">
-                    <div class="burger-menu">
-                      <div class="burger-click-region" onclick="haminate()">
-                        <span class="burger-menu-piece top"></span>
-                        <span class="burger-menu-piece middle"></span>
-                        <span class="burger-menu-piece bottom"></span>
-                      </div>
-                    </div>
-                
-                    <div class="sidebar">
-                      <button class="close-btn" onclick="haminate()">&#10005;</button>
-                      <div class="sidemenu">
-                        <li class="sidetext">Home</li>
-                        <li class="sidetext">About</li>
-                        <li class="sidetext">Work</li>
-                        <li class="sidetext">Contact</li>
-                      </div>
-                      <div class="tapthat">
-                        <h2>Tap&nbsp;That</h2>
-                        <h2>Tap&nbsp;That</h2>
-                        <h2>Tap&nbsp;That</h2>
-                      </div>
-                      <div class="cred">
-                        <h3 style="font-size: 30px;">Social</h3><br> <br>
-                        <p>Instagram</p><br>
-                        <p>LinkedIn</p><br>
-                        <p>Facebook</p><br><br>
-                        <h3 style="font-size: 30px;">Address</h3> <br><br>
-                        <p style="margin-top: -10px;">3rd Floor, Shravanee Premier,</p>
-                        <p> <br>Ashoka Pillar Rd, above TRENDS, 2nd Block,</p>
-                        <p><br> Jayanagar,Bengaluru, Karnataka 560011</p>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-        </div>
-        <div id="page2">
-          <div id="cursor2">
 
+      <video id="viddoo" autoplay loop muted src="public/videos/file.mp4"></video>
+
+
+      <div id="page1-content">
+        <nav>
+          <h3><img id="bgrem2" src="public/images/naam.png" alt=""> <img id="bgrem" src="public/images/bgrem.png"
+              alt=""> </h3>
+          <h3 id="ventureA">The Venture Agency</h3>
+          <div></div>
+        </nav>
+        <div class="wrapper">
+          <div class="burger-menu">
+            <div class="burger-click-region" onclick="haminate()">
+              <span class="burger-menu-piece top"></span>
+              <span class="burger-menu-piece middle"></span>
+              <span class="burger-menu-piece bottom"></span>
+            </div>
           </div>
-          <div class="p2kah1">
-             <p> At<img style="width: 170px; transform: translateY(47%);
-              " src="public/images/naam.png" alt="">We blend creativity with<br> strategy to create cohesive brand ecosystems<br>that resonate with your audience and <br> reflect your core values
-             </p>
-             <div class="h1">
-              <h1>
-                Explore  
-               </h1>
-               <h1>Our</h1>
-               <h1>Insights</h1>
-               <button class="animated-btn22">Our&nbsp;Insights &nbsp; &#8599;</button>
-             </div>
+
+          <div class="sidebar">
+            <button class="close-btn" onclick="haminate()">&#10005;</button>
+            <div class="sidemenu">
+              <li class="sidetext">Home</li>
+              <li class="sidetext" onclick="location.href='/pages/about.html'">About</li>
+              <li class="sidetext">Work</li>
+              <li class="sidetext" onclick="location.href='/pages/form.html'">Contact</li>
+            </div>
+            <div class="tapthat">
+              <h2>Tap&nbsp;That</h2>
+              <h2>Tap&nbsp;That</h2>
+              <h2>Tap&nbsp;That</h2>
+            </div>
+            <div class="cred">
+              <h3 style="font-size: 30px;">Social</h3><br> <br>
+              <p>Instagram</p><br>
+              <p>LinkedIn</p><br>
+              <p>Facebook</p><br><br>
+              <h3 style="font-size: 30px;">Address</h3> <br><br>
+              <p style="margin-top: -10px;">3rd Floor, Shravanee Premier,</p>
+              <p> <br>Ashoka Pillar Rd, above TRENDS, 2nd Block,</p>
+              <p><br> Jayanagar,Bengaluru, Karnataka 560011</p>
+            </div>
+          </div>
         </div>
-          <div class="right2" id="right2">
-            <div class="capsule2">
-              <div id="imagewala">
-                <div id="imagewalaxxx">
-                  <img id="imagewala" style="object-fit: cover;" src="public/images/9crop.jpg" alt="">
-                </div>
-              </div>
-              <div class="textC">
-                <h2>At<img style="width: 170px; transform: translateY(47%);
+      </div>
+    </div>
+    <div id="page2">
+      <div id="cursor2">
+
+      </div>
+      <div class="p2kah1">
+        <p> At<img style="width: 170px; transform: translateY(47%);
+              " src="public/images/naam.png" alt="">We blend creativity with<br> strategy to create cohesive brand
+          ecosystems<br>that resonate with your audience and <br> reflect your core values
+        </p>
+        <div class="h1">
+          <h1>
+            Explore
+          </h1>
+          <h1>Our</h1>
+          <h1>Insights</h1>
+          <button class="animated-btn22">Our&nbsp;Services &nbsp; &#8599;</button>
+        </div>
+      </div>
+      <div class="right2" id="right2">
+        <div class="capsule2">
+          <div id="imagewala">
+            <div id="imagewalaxxx">
+              <img id="imagewala" style="object-fit: cover;" src="public/images/9crop.jpg" alt="">
+            </div>
+          </div>
+          <div class="textC">
+            <h2>At<img style="width: 170px; transform: translateY(47%);
                   " src="public/images/naam.png" alt="">,</h2> <br>
-                <h2>we don't just follow trends;</h2> <br>
-                <h2>We set them !</h2>
-              </div>
-              <button class="capsule2btn" onclick="location.href='/pages/about.html'">About Us</button>
+            <h2>we don't just follow trends;</h2> <br>
+            <h2>We set them !</h2>
           </div>
+          <button class="capsule2btn" onclick="location.href='/pages/about.html'">About Us</button>
+        </div>
+      </div>
+      <div class="right2" id="right3">
+        <div class="capsule2">
+          <div class="textC" id="textCC">
+            <h2>Tap Vibe</h2>
+            <h2>Tap Spark</h2>
+            <h2>Tap Trend</h2>
+            <h2>Tap Sizzle</h2>
+            <h2>Tap Blast</h2>
           </div>
-          <div class="right2" id="right3">
-            <div class="capsule2" >
-              <div class="textC" id="textCC">
-                <h2>Tap Vibe</h2>
-                <h2>Tap Spark</h2>
-                <h2>Tap Trend</h2>
-                <h2>Tap Sizzle</h2>
-                <h2>Tap Blast</h2>
-              </div>
-              <div id="imagewala" class="imagewala2">
-                <div id="imagewalaxxx">
-                  <img id="imagewala" style="object-fit: cover;" src="public/images/4crop.jpg" alt="">
-                </div>
-              </div>
+          <div id="imagewala" class="imagewala2">
+            <div id="imagewalaxxx">
+              <img id="imagewala" style="object-fit: cover;" src="public/images/4crop.jpg" alt="">
             </div>
           </div>
         </div>
-        <div id="page3">
-            <div id="page3-top">
-                <h4>Agency & Venture <span> Models</span> &#8628;</h4>
-                <h2>Explore Our Services</h2>
-                <h2>& engagement models</h2>
-            </div>
-            <div id="tr">Transforming your vision into goals .</div>
-            <div class="page3-elem">
-                <div class="box">
-                    <img src="public/images/vi1ki.jpg" alt="">
-                    <video autoplay loop muted src="public/videos/vi1ki.mp4"></video>
-                </div>
-                <div class="box">
-                    <img src="public/images/vi2ki.jpg" alt="">
-                    <video autoplay loop muted src="public/videos/vi2ki.mp4"></video>
-                </div>
-                <div class="box">
-                    <img src="public/images/labonitaki.jpg" alt="">
-                    <video autoplay loop muted src="public/videos/labonita.mp4"></video>
-                </div>
-            </div>
+      </div>
+    </div>
+    <div id="page3">
+      <div id="page3-top">
+        <h4>Agency & Venture <span> Models</span> &#8628;</h4>
+        <h2>Explore Our Services</h2>
+        <h2>& engagement models</h2>
+      </div>
+      <div id="tr">Transforming your vision into goals .</div>
+      <div class="page3-elem">
+        <div class="box">
+          <img src="public/images/vi1ki.jpg" alt="">
+          <video autoplay loop muted src="public/videos/vi1ki.mp4"></video>
         </div>
-        <div id="page4">
-            <div class="page2-content">
-                <div class="elem">
-                    <span id="full">Full-service creatice agency.</span><span id="bang">Bangalore</span>
-                </div> <hr>
-                   <span> <hr>
-                    <p>
-                      We, Tap That are a dynamic 360-degree creative agency based in Bangalore, specializing in comprehensive marketing and branding solutions. Our services encompass digital marketing, social media management, branding, logo design, SEO, website development, and video production. We have a reputation for making things go viral, particularly in the hospitality sector and among social media influencers.
-                    </p>
-                   </span>
-                
-            </div>
-    
+        <div class="box">
+          <img src="public/images/vi2ki.jpg" alt="">
+          <video autoplay loop muted src="public/videos/vi2ki.mp4"></video>
         </div>
-        <div id="page5">
-            <div id="page5-top">
-              <div style="position: relative;">
-                <img src="public/images/rough.webp" id="rough" alt="" style="position: absolute; z-index: 1; top: 0; left: 50%; transform: translate(-50%, -50%);">
-                <h1>Our <span style=" z-index: 0;">Clients</span> Family</h1>
+        <div class="box">
+          <img src="public/images/labonitaki.jpg" alt="">
+          <video autoplay loop muted src="public/videos/labonita.mp4"></video>
+        </div>
+      </div>
+    </div>
+    <div id="page4">
+      <div class="page2-content">
+        <div class="elem">
+          <span id="full">Full-service creatice agency.</span><span id="bang">Bangalore</span>
+        </div>
+        <hr>
+        <span>
+          <hr>
+          <p>
+            We, Tap That are a dynamic 360-degree creative agency based in Bangalore, specializing in comprehensive
+            marketing and branding solutions. Our services encompass digital marketing, social media management,
+            branding, logo design, SEO, website development, and video production. We have a reputation for making
+            things go viral, particularly in the hospitality sector and among social media influencers.
+          </p>
+        </span>
+
+      </div>
+
+    </div>
+    <div id="page5">
+      <div id="page5-top">
+        <div style="position: relative;">
+          <img src="public/images/rough.webp" id="rough" alt=""
+            style="position: absolute; z-index: 1; top: 0; left: 50%; transform: translate(-50%, -50%);">
+          <h1>Our <span style=" z-index: 0;">Clients</span> Family</h1>
+        </div>
+
+        <div id="swipper">
+          <!-- Desktop Swiper -->
+          <div class="swiper-container desktop-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="public/images/1.jpg" alt="Image 1">
+                <img src="public/images/2.jpg" alt="Image 2">
+                <img src="public/images/3.jpg" alt="Image 3">
+                <img src="public/images/4.jpg" alt="Image 4">
+                <img src="public/images/5.jpg" alt="Image 5">
               </div>
-              
-              <div id="swipper">
-                <!-- Desktop Swiper -->
-                <div class="swiper-container desktop-swiper">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <img src="public/images/1.jpg" alt="Image 1">
-                      <img src="public/images/2.jpg" alt="Image 2">
-                      <img src="public/images/3.jpg" alt="Image 3">
-                      <img src="public/images/4.jpg" alt="Image 4">
-                      <img src="public/images/5.jpg" alt="Image 5">
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="public/images/6.jpg" alt="Image 1">
-                      <img src="public/images/7.jpg" alt="Image 2">
-                      <img src="public/images/8.jpg" alt="Image 3">
-                      <img src="public/images/9.jpg" alt="Image 4">
-                      <img src="public/images/11.jpg" alt="Image 5">
-                    </div>
-                  </div>
-                </div>
-              
-                <!-- Mobile Layout -->
-                <div class="mobile-layout">
-                  <div class="image-grid">
-                    <img src="public/images/1.jpg" alt="Image 1">
-                    <img src="public/images/2.jpg" alt="Image 2">
-                    <img src="public/images/3.jpg" alt="Image 3">
-                    <img src="public/images/4.jpg" alt="Image 4">
-                    <img src="public/images/5.jpg" alt="Image 5">
-                    <img src="public/images/6.jpg" alt="Image 6">
-                    <img src="public/images/7.jpg" alt="Image 7">
-                    <img src="public/images/8.jpg" alt="Image 8">
-                    <img src="public/images/9.jpg" alt="Image 9">
-                    <img src="public/images/11.jpg" alt="Image 11">
-                  </div>
-                </div>
+              <div class="swiper-slide">
+                <img src="public/images/6.jpg" alt="Image 1">
+                <img src="public/images/7.jpg" alt="Image 2">
+                <img src="public/images/8.jpg" alt="Image 3">
+                <img src="public/images/9.jpg" alt="Image 4">
+                <img src="public/images/11.jpg" alt="Image 5">
               </div>
+            </div>
+          </div>
+
+          <!-- Mobile Layout -->
+          <div class="mobile-layout">
+            <div class="image-grid">
+              <img src="public/images/1.jpg" alt="Image 1">
+              <img src="public/images/2.jpg" alt="Image 2">
+              <img src="public/images/3.jpg" alt="Image 3">
+              <img src="public/images/4.jpg" alt="Image 4">
+              <img src="public/images/5.jpg" alt="Image 5">
+              <img src="public/images/6.jpg" alt="Image 6">
+              <img src="public/images/7.jpg" alt="Image 7">
+              <img src="public/images/8.jpg" alt="Image 8">
+              <img src="public/images/9.jpg" alt="Image 9">
+              <img src="public/images/11.jpg" alt="Image 11">
+            </div>
+          </div>
         </div>
-       </div>
-       
-       <div id="container3D">
-        
-        <div class="one">
-          <h2 id="doitonce">Do&nbsp;It&nbsp;Once</h2>
+      </div>
+    </div>
+
+    <div id="container3D">
+
+      <div class="one">
+        <h2 id="doitonce">Do&nbsp;It&nbsp;Once</h2>
         <h2 id="doitright">Do&nbsp;It&nbsp;Right</h2>
-          <img id="fanta" src="public/images/bgrem.png" alt="">
+        <img id="fanta" src="public/images/bgrem.png" alt="">
       </div>
+    </div>
+
+    <div id="page6">
+      <div class="page6-content">
+        <div id="pehla">
+          <h2>Solutions</h2><br> <br>
+          <p>Branding</p> <br>
+          <p>Marketing</p> <br>
+          <p>Visuals</p> <br>
+          <p>Content&nbsp;Creating</p>
+        </div>
+        <div id="dusra">
+          <h2>Insights</h2>
+          <br> <br>
+          <p>Case&nbsp;Study</p> <br>
+          <p>Leadership</p> <br>
+          <p>News</p>
+        </div>
+        <div id="teesra">
+          <h2>About</h2>
+          <br> <br>
+          <p>Team</p> <br>
+          <p>Carees</p>
+        </div>
+        <div id="chautha"><button class="animated-btn"
+            onclick="location.href='/pages/form.html'">Contact&nbsp;Us</button>
+          <p>Privacy&nbsp;Policy</p>
+          <p>Trust</p>
+          <p>©&nbsp;2025&nbsp;TapThat.&nbsp;All&nbsp;rights&nbsp;reserved.</p>
+        </div>
+
       </div>
 
-       <div id="page6">
-        <div class="page6-content">
-            <div id="pehla"> 
-              <h2>Solutions</h2><br> <br>
-              <p>Branding</p> <br> 
-              <p>Marketing</p> <br> 
-              <p>Strategy</p> <br> 
-              <p>Hospitality</p> 
-            </div>
-            <div id="dusra"><h2>Insights</h2>
-              <br> <br>
-              <p>Case&nbsp;Study</p> <br> 
-              <p>Leadership</p> <br> 
-              <p>News</p></div>
-            <div id="teesra"><h2>About</h2>
-              <br> <br>
-              <p>Team</p> <br> 
-              <p>Carees</p></div>
-            <div id="chautha"><button class="animated-btn" onclick="location.href='/pages/form.html'">Contact&nbsp;Us</button>
-              <p>Privacy&nbsp;Policy</p>
-            <p>Trust</p>
-            <p>©&nbsp;2025&nbsp;TapThat.&nbsp;All&nbsp;rights&nbsp;reserved.</p>
-          </div>
-
-        </div>
-        
-        <div class="footer-h1">
-          <span>t</span><span>a</span><span>p</span>&nbsp;&nbsp;<span>t</span><span>h</span><span>a</span><span>t</span>
-        </div>
+      <div class="footer-h1">
+        <span>t</span><span>a</span><span>p</span>&nbsp;&nbsp;<span>t</span><span>h</span><span>a</span><span>t</span>
       </div>
-       </div>
-       <!-- Add this mobile sidebar HTML before closing </body> -->
-<div class="mobile-sidebar">
-  <button class="mobile-close-btn" onclick="toggleMobileSidebar()">&#10005;</button>
-  <div class="mobile-sidemenu">
-    <li class="mobile-sidetext">Home</li>
-    <li class="mobile-sidetext">About</li>
-    <li class="mobile-sidetext">Work</li>
-    <li class="mobile-sidetext">Contact</li>
+    </div>
   </div>
-  <div class="mobile-tapthat">
-    <h2>Tap&nbsp;That</h2>
-    <h2>Tap&nbsp;That</h2>
-    <h2>Tap&nbsp;That</h2>
+  <!-- Add this mobile sidebar HTML before closing </body> -->
+  <div class="mobile-sidebar">
+    <button class="mobile-close-btn" onclick="toggleMobileSidebar()">&#10005;</button>
+    <div class="mobile-sidemenu">
+      <li class="mobile-sidetext">Home</li>
+      <li class="mobile-sidetext" onclick="location.href='/pages/about.html'">About</li>
+      <li class="mobile-sidetext">Work</li>
+      <li class="mobile-sidetext" onclick="location.href='/pages/form.html'">Contact</li>
+    </div>
+    <div class="mobile-tapthat">
+      <h2>Tap&nbsp;That</h2>
+      <h2>Tap&nbsp;That</h2>
+      <h2>Tap&nbsp;That</h2>
+    </div>
+    <div class="mobile-cred">
+      <h3>Social</h3>
+      <p>Instagram</p>
+      <p>LinkedIn</p>
+      <p>Facebook</p>
+      <h3>Address</h3>
+      <p>3rd Floor, Shravanee Premier,</p>
+      <p>Ashoka Pillar Rd, above TRENDS, 2nd Block,</p>
+      <p>Jayanagar,Bengaluru, Karnataka 560011</p>
+    </div>
   </div>
-  <div class="mobile-cred">
-    <h3>Social</h3>
-    <p>Instagram</p>
-    <p>LinkedIn</p>
-    <p>Facebook</p>
-    <h3>Address</h3>
-    <p>3rd Floor, Shravanee Premier,</p>
-    <p>Ashoka Pillar Rd, above TRENDS, 2nd Block,</p>
-    <p>Jayanagar,Bengaluru, Karnataka 560011</p>
-  </div>
-</div>
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js" integrity="sha512-OzC82YiH3UmMMs6Ydd9f2i7mS+UFL5f977iIoJ6oy07AJT+ePds9QOEtqXztSH29Nzua59fYS36knmMcv79GOg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://unpkg.com/gsap@3.9.0/dist/gsap.min.js"></script>
-    <script src="https://unpkg.com/gsap@3.9.0/dist/ScrollTrigger.min.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
-    <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"
+    integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"
+    integrity="sha512-OzC82YiH3UmMMs6Ydd9f2i7mS+UFL5f977iIoJ6oy07AJT+ePds9QOEtqXztSH29Nzua59fYS36knmMcv79GOg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://unpkg.com/gsap@3.9.0/dist/gsap.min.js"></script>
+  <script src="https://unpkg.com/gsap@3.9.0/dist/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+    integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+    integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
