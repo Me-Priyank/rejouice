@@ -150,8 +150,13 @@ body {
 }
 
 .cred p {
+  cursor: pointer;
   width: 200%;
   font-size: 15px;
+}
+
+.cred p:hover{
+  text-decoration: underline;
 }
 
 .sidemenu {
