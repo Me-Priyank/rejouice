@@ -4,479 +4,538 @@
 
 
 @font-face {
-    font-family: nb;
-    src: url(/public/fonts/NBInternationalProBoo.ttf) format('truetype');
-    /* Add more font formats for broader browser support */
-    /* e.g., woff, woff2, etc. */
-  }
-
-  @font-face {
-    font-family: tapthat;
-    src: url(/public/fonts/Minecraft.ttf) format('truetype');
-    /* Add more font formats for broader browser support */
-    /* e.g., woff, woff2, etc. */
-  }
-
-
-  @font-face {
-    font-family: milk;
-    src: url(/public/fonts/Milker.otf) format('truetype');
-    /* Add more font formats for broader browser support */
-    /* e.g., woff, woff2, etc. */
-  }
-
-  @font-face {
-    font-family: gome;
-    src: url(/public/fonts/gome-pixel.rounded.otf) format('truetype');
-    /* Add more font formats for broader browser support */
-    /* e.g., woff, woff2, etc. */
-  }
-
-  @font-face {
-    font-family: sig;
-    src: url(/public/fonts/659dbdfd5a080be8d348316f_PPNeueMachina_\ Light\ \(1\).ttf) format('truetype');
-    /* Add more font formats for broader browser support */
-    /* e.g., woff, woff2, etc. */
-  }
-
-  @font-face {
-    font-family: Tt;
-    src: url(/public/fonts/IBMPlexMono-Medium-e61d37ab.ttf) format('truetype');
-    /* Add more font formats for broader browser support */
-    /* e.g., woff, woff2, etc. */
-  }
-
-  @font-face {
-    font-family: rj;
-    src: url(/public/fonts/Rejouice-Headline.ttf) format('truetype');
-  }
-
-
-
-
-
-
-
-
-
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  font-family: nb;
+  src: url(/public/fonts/NBInternationalProBoo.ttf) format('truetype');
+  /* Add more font formats for broader browser support */
+  /* e.g., woff, woff2, etc. */
 }
 
-html,body{
-    height: 100%;
-    width: 100%;
+@font-face {
+  font-family: tapthat;
+  src: url(/public/fonts/Minecraft.ttf) format('truetype');
+  /* Add more font formats for broader browser support */
+  /* e.g., woff, woff2, etc. */
 }
 
-.container{
-    overflow: hidden;
 
+@font-face {
+  font-family: milk;
+  src: url(/public/fonts/Milker.otf) format('truetype');
+  /* Add more font formats for broader browser support */
+  /* e.g., woff, woff2, etc. */
+}
+
+@font-face {
+  font-family: gome;
+  src: url(/public/fonts/gome-pixel.rounded.otf) format('truetype');
+  /* Add more font formats for broader browser support */
+  /* e.g., woff, woff2, etc. */
+}
+
+@font-face {
+  font-family: sig;
+  src: url(/public/fonts/659dbdfd5a080be8d348316f_PPNeueMachina_\ Light\ \(1\).ttf) format('truetype');
+  /* Add more font formats for broader browser support */
+  /* e.g., woff, woff2, etc. */
+}
+
+@font-face {
+  font-family: Tt;
+  src: url(/public/fonts/IBMPlexMono-Medium-e61d37ab.ttf) format('truetype');
+  /* Add more font formats for broader browser support */
+  /* e.g., woff, woff2, etc. */
+}
+
+@font-face {
+  font-family: rj;
+  src: url(/public/fonts/Rejouice-Headline.ttf) format('truetype');
 }
 
 
 
-section{
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
+
+
+
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-section.hero-img, section.about-img{
-    height: 200vh;
+html,
+body {
+  height: 100%;
+  width: 100%;
 }
 
-.hero{
-    background-color: #000;
+.container {
+  overflow: hidden;
+
 }
 
-.about{
-    background-color: #000;
+
+
+section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
 }
 
-.footer{
-    background-color: #000;
+section.hero-img,
+section.about-img {
+  height: 200vh;
 }
 
-img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(10%,130%);
-    height: 30%;
-    width: 30%;
-    object-fit: cover;
-    z-index: -1;
+.hero {
+  background-color: #000;
 }
 
-h1{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 2vw;
-    font-weight: 600;
-    letter-spacing: -0.025em;
-    color: #a4a1a1;
-    opacity: 0.9;
-    white-space: nowrap;
+.about {
+  background-color: #000;
 }
 
-p{
+.footer {
+  background-color: #000;
+}
+
+img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(10%, 130%);
+  height: 30%;
+  width: 30%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 2vw;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  color: #a4a1a1;
+  opacity: 0.9;
+  white-space: nowrap;
+}
+
+p {
   text-align: center;
 }
 
-.blocks-container{
-    position: absolute;
-    height: 400px;
-    width: 100%;
+.blocks-container {
+  position: absolute;
+  height: 400px;
+  width: 100%;
 }
 
-.blocks-container.top{
-    top: 0;
+.blocks-container.top {
+  top: 0;
 }
 
-.blocks-container.bottom{
-    bottom: 0;
+.blocks-container.bottom {
+  bottom: 0;
 }
 
-.blocks-row{
-    height: 100px;
-    width: 100%;
-    overflow: hidden;
-    display: flex;
+.blocks-row {
+  height: 100px;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
 }
 
-.block{
-    height: 100%;
-    width: 100%;
-    transition: opacity 100ms;
+.block {
+  height: 100%;
+  width: 100%;
+  transition: opacity 100ms;
 }
 
-.blocks-container.top .blocks-row .block{
-    opacity: 1;
+.blocks-container.top .blocks-row .block {
+  opacity: 1;
 }
 
-.blocks-container.bottom .blocks-row .block{
-    opacity: 0;
+.blocks-container.bottom .blocks-row .block {
+  opacity: 0;
 }
 
-.hero-img .blocks-container.top .blocks-row .block{
-    background: #000;
+.hero-img .blocks-container.top .blocks-row .block {
+  background: #000;
 }
 
-.hero-img .blocks-container.bottom .blocks-row .block{
-    background: #000;
+.hero-img .blocks-container.bottom .blocks-row .block {
+  background: #000;
 }
 
-.about-img .blocks-container.top .blocks-row .block{
-    background: #000;
+.about-img .blocks-container.top .blocks-row .block {
+  background: #000;
 }
 
-.about-img .blocks-container.bottom .blocks-row .block{
-    background: #000;
+.about-img .blocks-container.bottom .blocks-row .block {
+  background: #000;
 }
 
 
 /* Add these media queries at the end of your about.css file */
 
 @media (max-width: 768px) {
-    h1 {
-        font-size: 5vw !important; /* Larger text for mobile readability */
-        opacity: 0.9; /* More visible text */
-        white-space: nowrap;
-          }
+  h1 {
+    font-size: 5vw !important;
+    /* Larger text for mobile readability */
+    opacity: 0.9;
+    /* More visible text */
+    white-space: nowrap;
+  }
 
-    p{
-      text-align: center;
-    }
+  p {
+    text-align: center;
+  }
 
-    section.hero-img, 
-    section.about-img {
-        height: 150vh; /* Reduce tall sections for mobile */
-    }
+  section.hero-img,
+  section.about-img {
+    height: 150vh;
+    /* Reduce tall sections for mobile */
+  }
 
-    .blocks-container {
-        height: 300px; /* Smaller block containers */
-    }
+  .blocks-container {
+    height: 300px;
+    /* Smaller block containers */
+  }
 
-    .blocks-row {
-        height: 75px; /* Smaller block rows */
-    }
+  .blocks-row {
+    height: 75px;
+    /* Smaller block rows */
+  }
 
-    /* Optimize block animation timing for touch scrolling */
-    .block {
-        transition: opacity 50ms;
-    }
+  /* Optimize block animation timing for touch scrolling */
+  .block {
+    transition: opacity 50ms;
+  }
 
-    /* Adjust spacing for smaller screens */
-    .blocks-container.top {
-        top: -10px;
-    }
+  /* Adjust spacing for smaller screens */
+  .blocks-container.top {
+    top: -10px;
+  }
 
-    .blocks-container.bottom {
-        bottom: -10px;
-    }
+  .blocks-container.bottom {
+    bottom: -10px;
+  }
 }
 
 @media (max-width: 480px) {
-    h1 {
-        font-size: 18vw; /* Even larger text for very small screens */
-        letter-spacing: -0.015em;
-    }
+  h1 {
+    font-size: 18vw;
+    /* Even larger text for very small screens */
+    letter-spacing: -0.015em;
+  }
 
-    section.hero-img, 
-    section.about-img {
-        height: 120vh; /* Further reduce tall sections */
-    }
+  section.hero-img,
+  section.about-img {
+    height: 120vh;
+    /* Further reduce tall sections */
+  }
 }
 
-#page6{
-    margin-top: -10%;
-      height: 90vh;
-      width: 100%;
-      background-color: black;
-      bottom: 0;
-      color: white;
+#page6 {
+  margin-top: -10%;
+  height: 90vh;
+  width: 100%;
+  background-color: black;
+  bottom: 0;
+  color: white;
+}
+
+#page6 h1 {
+  margin-top: 2%;
+  font-size: 20vw;
+  font-weight: 10;
+  line-height: 27vw;
+}
+
+#page6 span {
+  margin-top: 15%;
+  font-size: 26vw;
+  display: inline-block;
+  color: white;
+  font-family: 'gome';
+}
+
+.page6-content {
+  margin-top: 10%;
+  height: 20vh;
+  width: 20vw;
+  display: flex;
+  padding: 10px;
+  color: white;
+}
+
+.page6-content #pehla {
+  font-family: 'sig';
+  margin-left: 20%;
+  margin-top: 20%;
+  z-index: 9999;
+}
+
+.page6-content #dusra {
+  font-family: 'sig';
+  z-index: 9999;
+
+  margin-left: 80%;
+  margin-top: 20%;
+}
+
+.page6-content #teesra {
+  font-family: 'sig';
+  z-index: 9999;
+
+  margin-left: 80%;
+  margin-top: 20%;
+}
+
+.page6-content #chautha {
+  font-family: 'sig';
+  z-index: 9999;
+
+  margin-left: 130%;
+  margin-top: 20%;
+}
+
+.page6-content #pehla p {
+  font-size: 20px;
+  font-family: 'sig';
+}
+
+.page6-content #dusra p {
+  font-size: 20px;
+  font-family: 'sig';
+
+}
+
+.page6-content #teesra p {
+  font-size: 20px;
+  font-family: 'sig';
+
+}
+
+.page6-content #chautha p {
+  margin-top: 5%;
+  font-size: 15px;
+  font-family: 'sig';
+  text-decoration: underline;
+}
+
+.animated-btn {
+  padding: 15px 80px;
+  font-size: 18px;
+  border: none;
+  background-color: #ffa600;
+  color: white;
+  cursor: pointer;
+  border-radius: 0;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  margin-bottom: 70%;
+}
+
+.animated-btn::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0;
+  background-color: #fff5e6;
+  transition: height 0.5s ease;
+  z-index: -1;
+}
+
+.animated-btn:hover {
+  color: #333;
+}
+
+.animated-btn:hover::before {
+  height: 100%;
+}
+
+
+
+#pehla p,
+#dusra p,
+#teesra p,
+#chautha p {
+  margin: 0;
+  text-align: left;
+}
+
+#pehla p,
+#dusra p,
+#teesra p,
+#chautha p:hover {
+  cursor: pointer;
+  z-index: 9999;
+}
+#pehla p:hover{
+  text-decoration: underline;
+}
+#dusra p:hover{
+  text-decoration: underline;
+}
+#teesra p:hover{
+  text-decoration: underline;
+}
+#chautha p:hover{
+  text-decoration: underline;
+}
+
+/* ndwbcdui */
+
+
+@media (max-width: 768px) {
+
+
+
+  #page6 {
+    padding: 40px 20px;
+
   }
 
-  #page6 h1{
-    margin-top: 2%;
-     font-size: 20vw;
-     font-weight: 10;
-     line-height: 27vw;
- }
- #page6  span{
-   margin-top: 15%;
-   font-size: 26vw;
-     display: inline-block;
-     color: white;
-     font-family: 'gome';
- }
-
- .page6-content{
-    margin-top: 10%;
-      height: 20vh;
-      width: 20vw;
-      display: flex;
-      padding: 10px;
-      color: white;
+  .page6-content {
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    width: 100%;
+    height: 90vh;
+    margin-top: 80px;
   }
 
-  .page6-content #pehla{
-    font-family: 'sig';
-   margin-left: 20%;
-   margin-top: 20%;
+  #pehla,
+  #dusra,
+  #teesra,
+  #chautha {
+    margin: 0;
+    text-align: center !important;
   }
-  
-  .page6-content #dusra{
-    font-family: 'sig';
-  
-    margin-left: 80%;
-    margin-top: 20%;
+
+  #chautha {
+    grid-column: 1 / -1;
+    text-align: center;
   }
-  
-  .page6-content #teesra{
-    font-family: 'sig';
-  
-    margin-left: 80%;
-    margin-top: 20%;
+
+  .footer-h1 {
+
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    text-align: center;
   }
-  
-  .page6-content #chautha{
-    font-family: 'sig';
-  
-    margin-left: 130%;
-    margin-top: 20%;
+
+
+  .footer-h1 span {
+
+    margin-top: 500%;
+    margin-left: -2%;
+    width: 200px;
   }
-  
-  .page6-content #pehla p{
-    font-size: 20px;
-    font-family: 'sig';
+
+  #page6 {
+    height: auto;
+    padding: 50px auto;
   }
-  
-  .page6-content #dusra p{
-    font-size: 20px;
-    font-family: 'sig';
-  
+
+  .page6-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 0;
   }
-  
-  .page6-content #teesra p{
-    font-size: 20px;
-    font-family: 'sig';
-  
+
+  .page6-content #pehla,
+  .page6-content #dusra,
+  .page6-content #teesra,
+  .page6-content #chautha {
+    margin: 20px 0;
+    text-align: center;
+    margin-top: -4%;
   }
-  
-  .page6-content #chautha p{
-    margin-top: 5%;
-    font-size: 15px;
-    font-family: 'sig';
-    text-decoration: underline;
+
+  .page6-content #pehla p,
+  .page6-content #dusra p,
+  .page6-content #teesra p,
+  .page6-content #chautha p {
+    text-align: center;
+
+  }
+
+  .footer-h1 h1 {
+    font-size: 48px;
+
+  }
+
+  /* Buttons */
+  .animated-btn,
+  .animated-btn22 {
+    padding: 12px 40px;
+    font-size: 16px;
+    margin: 20px 0;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+
+
+
+
+
+
+
+
+
+
+
+
+  .img h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  #page6 {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .footer {
+    width: 100%;
+
+  }
+
+  .page6-content {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    gap: 2rem;
+
+  }
+
+  .page6-content div {
+    margin: 0 !important;
+    text-align: center;
+
   }
 
   .animated-btn {
-    padding: 15px 80px;
-    font-size: 18px;
-    border: none;
-    background-color: #ffa600;
-    color: white;
-    cursor: pointer;
-    border-radius: 0;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-    margin-bottom: 70%;
-  }
-  
-  .animated-btn::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 0;
-    background-color: #fff5e6;
-    transition: height 0.5s ease;
-    z-index: -1;
-  }
-  
-  .animated-btn:hover {
-    color: #333;
-  }
-  
-  .animated-btn:hover::before {
-    height: 100%;
+    margin-bottom: 20px;
   }
 
-
-
-  /* ndwbcdui */
-
-
-  @media (max-width: 768px) {
-   
-    
-    
-    #page6 {
-      padding: 40px 20px;
-  
-    }
-  
-    .page6-content {
-      display: flex;
-      grid-template-columns: 1fr 1fr;
-      gap: 30px;
-      width: 100%;
-      height: 90vh;
-      margin-top: 80px;
-    }
-  
-    #pehla, #dusra, #teesra, #chautha {
-      margin: 0;
-      text-align: left;
-    }
-  
-    #chautha {
-      grid-column: 1 / -1;
-      text-align: center;
-    }
-  
-    .footer-h1 {
-      
-      display: flex;
-      flex-direction: row;
-      margin-top: 40px;
-      text-align: center;
-    }
-  
-  
-    .footer-h1 span {
-      
-      margin-top: 500%;
-      margin-left: -2%;
-      width: 200px;
-    }
-    #page6 {
-      height: auto;
-      padding: 50px auto;
-    }
-  
-    .page6-content {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      margin-top: 0;
-    }
-  
-    .page6-content #pehla,
-    .page6-content #dusra,
-    .page6-content #teesra,
-    .page6-content #chautha {
-      margin: 20px 0;
-      text-align: center;
-      margin-top: -4%;
-    }
-  
-    .footer-h1 h1 {
-      font-size: 48px;
-      
-    }
-  
-    /* Buttons */
-    .animated-btn,
-    .animated-btn22 {
-      padding: 12px 40px;
-      font-size: 16px;
-      margin: 20px 0;
-    }
+  #pehla p {
+    text-align: center;
   }
-
-
-
-  @media (max-width: 768px) {
-  
-  
-  
-  
-   
-  
-    
-  
-   
-  
-   
-  
-    .img h1 {
-      font-size: 3rem;
-      text-align: center;
-    }
-    
-    #page6 {
-      height: auto;
-      padding: 40px 20px;
-    }
-     
-    .footer{
-      width: 100%;
-      
-    }
-    .page6-content {
-      flex-direction: column;
-      width: 100%;
-      height: auto;
-      gap: 2rem;
-      
-    }
-  
-    .page6-content div {
-      margin: 0 !important;
-      text-align: center;
-  
-    }
-  
-    .animated-btn {
-      margin-bottom: 20px;
-    }
-  }
+}
