@@ -349,3 +349,134 @@ p{
   .animated-btn:hover::before {
     height: 100%;
   }
+
+
+
+  /* ndwbcdui */
+
+
+  @media (max-width: 768px) {
+   
+    
+    
+    #page6 {
+      padding: 40px 20px;
+  
+    }
+  
+    .page6-content {
+      display: flex;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      width: 100%;
+      height: 90vh;
+      margin-top: 80px;
+    }
+  
+    #pehla, #dusra, #teesra, #chautha {
+      margin: 0;
+      text-align: left;
+    }
+  
+    #chautha {
+      grid-column: 1 / -1;
+      text-align: center;
+    }
+  
+    .footer-h1 {
+      
+      display: flex;
+      flex-direction: row;
+      margin-top: 40px;
+      text-align: center;
+    }
+  
+  
+    .footer-h1 span {
+      
+      margin-top: 500%;
+      margin-left: -2%;
+      width: 200px;
+    }
+    #page6 {
+      height: auto;
+      padding: 50px auto;
+    }
+  
+    .page6-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-top: 0;
+    }
+  
+    .page6-content #pehla,
+    .page6-content #dusra,
+    .page6-content #teesra,
+    .page6-content #chautha {
+      margin: 20px 0;
+      text-align: center;
+      margin-top: -4%;
+    }
+  
+    .footer-h1 h1 {
+      font-size: 48px;
+      
+    }
+  
+    /* Buttons */
+    .animated-btn,
+    .animated-btn22 {
+      padding: 12px 40px;
+      font-size: 16px;
+      margin: 20px 0;
+    }
+  }
+
+
+
+  @media (max-width: 768px) {
+  
+  
+  
+  
+   
+  
+    
+  
+   
+  
+   
+  
+    .img h1 {
+      font-size: 3rem;
+      text-align: center;
+    }
+    
+    #page6 {
+      height: auto;
+      padding: 40px 20px;
+    }
+     
+    .footer{
+      width: 100%;
+      
+    }
+    .page6-content {
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+      gap: 2rem;
+      
+    }
+  
+    .page6-content div {
+      margin: 0 !important;
+      text-align: center;
+  
+    }
+  
+    .animated-btn {
+      margin-bottom: 20px;
+    }
+  }

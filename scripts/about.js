@@ -55,25 +55,20 @@ document.addEventListener("DOMContentLoaded", ()=>{
 });
 
 
-function page6Animation(){
-    gsap.from(" #page6  span", {
-      y: 350,
-      stagger: 3.9,
-      duration: 9,
-      scrollTrigger: {
-          trigger: "#page6",
-          scroller: "body",
-          start: "top 57%",
-          end: "bottom bottom",
-          // markers: true,
-          scrub: 2,
-          delay:40
-      }
+function page6Animation() {
+    gsap.from("#page6 span", {
+        y: 250,
+        stagger: 2, 
+        duration: 2.5,
+        scrollTrigger: {
+            trigger: "#page6",
+            start: "top 80%", 
+            end: "bottom bottom",
+            scrub: 2,
+        }
     });
-    }
+}
     
-    if(window.innerWidth > 768){
       page6Animation();
-    }
 
     
