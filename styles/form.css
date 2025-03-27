@@ -461,10 +461,32 @@ font-size: 60px;
     overflow-y: hidden;
     border-top: 6px dashed #ffa600;
     position: absolute;
+    overflow-x: hidden;
     width: 100%;
     
   }
 
+  #pehla,#dusra, #teesra, #chautha{
+    z-index: 9999;
+  }
+
+
+  #pehla p:hover{
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  #dusra p:hover{
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  #teesra p:hover{
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  #chautha p:hover{
+    cursor: pointer;
+    text-decoration: underline;
+  }
   /* njb */
 
 
