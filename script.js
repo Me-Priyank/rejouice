@@ -629,9 +629,8 @@ if (window.innerWidth > 700) {
     });
   }
 
-  if (window.innerWidth > 768) {
     page6Animation();
-  }
+  
 
   document.querySelector('.btn-6').addEventListener('mouseenter', function (e) {
     const span = this.querySelector('span');
